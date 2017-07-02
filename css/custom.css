@@ -1,0 +1,431 @@
+/*
+Whole page
+*/
+
+/*
+Colors:
+Lime green: bee170
+Yellow matching dp: fde4b2
+*/
+
+*
+{
+  font-family: avenir;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+body
+{
+  background: #000000;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+/*
+Text
+*/
+
+#introName
+{
+  color: #000000;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+#introText
+{
+  color: #000000;
+  font-size: 40px;
+}
+
+#educationHeader
+{
+  color: #ffffff;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+#workExperienceHeader
+{
+  color: #000000;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+#skillsHeader
+{
+  color: #000000;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+#bitsInfo
+{
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  margin: 50px;
+  text-align: left;
+}
+
+#npsInfo
+{
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  margin: 50px;
+  text-align: right;
+}
+
+#publicationsHeader
+{
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  margin-bottom: 10%;
+}
+
+/*
+Divs
+*/
+
+.fullPageDiv
+{
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#myFirstPage
+{
+  background-color: #fde4b2;
+}
+
+#mySecondPage
+{
+  background-color: #000000;
+}
+
+#myThirdPage
+{
+  background-color: teal;
+}
+
+#myFourthPage
+{
+  background-color: skyblue;
+}
+
+#myFifthPage
+{
+  background-color: #fde4b2;
+}
+
+#displayPicContainer
+{
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+#introNameContainer
+{
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  text-align: right;
+}
+
+#contactContainer
+{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 15%;
+}
+
+#bitsContainer
+{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-image: url('../img/bits.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#npsContainer
+{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-image: url('../img/nps.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#publicationsContainer
+{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  background: #009999;
+  padding: 20px;
+}
+
+#projectsContainer
+{
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#workExContainer
+{
+  position: relative;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+}
+
+/*
+Header containers
+*/
+
+#educationText
+{
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  opacity: 1;
+  z-index: 3;
+}
+
+#workExperienceText
+{
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  opacity: 1;
+  z-index: 3;
+}
+
+#skillsText
+{
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  opacity: 1;
+  z-index: 3;
+}
+
+/*
+Images
+*/
+
+#displayPic
+{
+  height: 100%;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+#contactContainer div
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: .8;
+  margin-bottom: 40px;
+}
+
+#contactContainer img
+{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  opacity: .5;
+  border: 2px solid black;
+  box-shadow: 5px;
+}
+
+#contactContainer img:hover
+{
+  opacity: .9;
+}
+
+#bitsContainer img
+{
+  height: 100%;
+  opacity: .5;
+}
+
+#npsContainer img
+{
+  height: 100%;
+  opacity: .5;
+}
+
+.workIcon
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  opacity: .5;
+  border: 2px solid black;
+  box-shadow: 5px;
+}
+
+.leftImg
+{
+  margin-right: 50%;
+  text-align: left;
+}
+
+.rightImg
+{
+  margin-left: 50%;
+  text-align: right;
+}
+
+/*
+Tables
+*/
+
+#projectsTable
+{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+#projectsTable td
+{
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+}
+
+#projectsTable .nonCenter
+{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+}
+
+#projectsTable td.nonCenter:hover
+{
+  opacity: .5;
+}
+
+#ptd5
+{
+  background: #002222;
+  text-align: center;
+  vertical-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+}
+
+#ptd1, #ptd3, #ptd7, #ptd9 { background: #002222; }
+#ptd2, #ptd4, #ptd6, #ptd8 { background: #008090; }
+
+#workExTable
+{
+  width: 800px;
+  margin-top: 150px;
+  font-size: 15px;
+}
+
+#workExTable td
+{
+  border: 0px solid black;
+  padding: 20px;
+}
+
+#workExTable td :nth-child(1)
+{
+  font-size: 30px;
+}
+
+#workExTable td :nth-child(2)
+{
+  font-size: 25px;
+}
+
+.tdLeft
+{
+  width: 45%;
+  text-align: left;
+}
+
+.tdCenter
+{
+  width: 10%;
+  text-align: center;
+}
+
+.tdRight
+{
+  width: 45%;
+  text-align: right;
+}
+
+/*
+Links
+*/
+
+#paperLink
+{
+  display: block;
+  width: 40%;
+  padding: 20px;
+  background: #dddddd;
+  opacity: .5;
+  border: 2px solid black;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  margin-top: 30px;
+}
+
+#paperLink:hover
+{
+  cursor: crosshair;
+  text-decoration: none;
+  opacity: 1;
+}
