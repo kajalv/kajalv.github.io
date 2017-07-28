@@ -1,0 +1,75 @@
+/*
+Education page
+*/
+
+#myEducationPage
+{
+  background-color: #000000;
+}
+
+#educationText
+{
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  opacity: 1;
+  z-index: 3;
+}
+
+#educationText h1
+{
+  color: #ffffff;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+.eduInfo
+{
+  background: white;
+  opacity: .8;
+  height: 70%;
+  width: 80%;
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  margin: 10%;
+  color: black;
+  padding: 10%;
+  text-align: left;
+}
+
+.eduContainer
+{
+  position: absolute;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#bitsContainer
+{
+  left: 0%;
+  background-image: url('../img/bits.jpg');
+  background-position: left;
+}
+
+#npsContainer
+{
+  left: 50%;
+  background-image: url('../img/nps.jpg');
+  background-position: right;
+}
+
+.eduContainer img
+{
+  height: 100%;
+  opacity: .5;
+}

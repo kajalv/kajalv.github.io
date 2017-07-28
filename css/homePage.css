@@ -1,0 +1,88 @@
+/*
+Home page
+*/
+
+#myHomePage
+{
+  background-color: #fde4b2;
+}
+
+#displayPicContainer
+{
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+#displayPicContainer img
+{
+  height: 100%;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+#introContainer
+{
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  text-align: right;
+}
+
+#introContainer h1
+{
+  color: #000000;
+  font-size: 130px;
+  font-weight: bold;
+}
+
+#introContainer p
+{
+  color: #000000;
+  font-size: 40px;
+}
+
+#contactContainer
+{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 15%;
+}
+
+.contactLink
+{
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: .8;
+  margin-bottom: 40px;
+}
+
+.contactLink img
+{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  opacity: .5;
+  border: 2px solid black;
+  box-shadow: 5px;
+}
+
+.contactLink img:hover
+{
+  opacity: .9;
+}
+
+.leftImg
+{
+  margin-right: 50%;
+  text-align: left;
+}
+
+.rightImg
+{
+  margin-left: 50%;
+  text-align: right;
+}

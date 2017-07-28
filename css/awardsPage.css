@@ -1,0 +1,89 @@
+/*
+Awards and skills page
+*/
+
+#myAwardsPage
+{
+  background-color: #fde4b2;
+}
+
+#awardsText
+{
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  opacity: 1;
+  z-index: 3;
+}
+
+#skillsText
+{
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  opacity: 1;
+  z-index: 3;
+}
+
+#skillsText h1, #awardsText h1
+{
+  color: #000000;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+#awardsInfo
+{
+  margin-top: 70px;
+  top: 0%;
+  left: 0%;
+}
+
+#skillsInfo
+{
+  margin-top: 90px;
+  top: 0%;
+  left: 0%;
+  color: black;
+  font-size: 20pt;
+}
+
+.awardBox
+{
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  padding: 10px;
+  font-size: 12pt;
+  color: black;
+  height: 300px;
+  width: 400px;
+}
+
+.awardBox p
+{
+  color: black;
+}
+
+#one
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#two
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#three
+{
+  position: relative;
+  top: 0%;
+  left: 0%;
+}

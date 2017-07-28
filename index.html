@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <title>Kajal Varma</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/fullsite.css" rel="stylesheet">
+    <link href="css/homePage.css" rel="stylesheet">
+    <link href="css/educationPage.css" rel="stylesheet">
+    <link href="css/projPage.css" rel="stylesheet">
+    <link href="css/workPage.css" rel="stylesheet">
+    <link href="css/awardsPage.css" rel="stylesheet">
+
+    <title>Kajal Varma | Personal Website</title>
   </head>
 
   <body>
     <!-- Main content -->
-    <div id="myFirstPage" align="center" class="fullPageDiv">
+    <div id="myHomePage" align="center" class="fullPageDiv">
 
       <!-- Display pic -->
       <div id="displayPicContainer" align="right">
-        <img id="displayPic" src="img/displayPic.jpg" />
+        <img src="img/displayPic.jpg" />
       </div>
 
       <!-- Front page text -->
-      <div id="introNameContainer">
-
-        <h1 id="introName">I'm Kajal Varma.</h1>
-        <p id="introText">
-          Software engineer. Student. Learner. Dreamer.
-        </p>
-
+      <div id="introContainer">
+        <h1>I'm Kajal Varma.</h1>
+        <p>Software engineer. Student. Learner. Dreamer.</p>
       </div>
 
       <!-- Contact icons -->
       <div id="contactContainer">
-        <div id="logo1">
+        <div class="contactLink">
            <a href="mailto:kajalv.333@gmail.com" target="_blank"><img class="leftImg" src="img/gmail.png" /></a>
         </div>
-        <div id="logo2">
+        <div class="contactLink">
           <a href="https://www.linkedin.com/in/kajal-varma-0a118680/" target="_blank"><img class="rightImg" src="img/linkedin.png" /></a>
         </div>
-        <div id="logo3">
+        <div class="contactLink">
           <a href="https://github.com/kajalv" target="_blank"><img class="leftImg" src="img/github.jpg" /></a>
         </div>
-        <div id="logo4">
+        <div class="contactLink">
           <a href="https://backendtech.wordpress.com/" target="_blank"><img class="rightImg" src="img/wordpress.png" /></a>
         </div>
-        <div id="logo5">
+        <div class="contactLink">
           <a href="https://stackoverflow.com/users/3369262/kv-333" target="_blank"><img class="leftImg" src="img/stackoverflow.png" /></a>
         </div>
       </div>
@@ -50,11 +56,11 @@
     </div>
 
     <!-- Second page -->
-    <div id="mySecondPage" align="center" class="fullPageDiv">
+    <div id="myEducationPage" align="center" class="fullPageDiv">
 
-      <div id="bitsContainer">
+      <div id="bitsContainer" class="eduContainer">
 
-        <div id="bitsInfo">
+        <div class="eduInfo">
           <h1>Birla Institute of Technology and Science, Pilani - K. K. Birla Goa Campus</h1>
           <h2>CGPA: 8.64 / 10.0</h2>
           <h3>B.E. (Hons.) Computer Science</h3>
@@ -62,34 +68,34 @@
         </div>
       </div>
 
-      <div id="npsContainer">
+      <div id="npsContainer" class="eduContainer">
 
-        <div id="npsInfo">
+        <div class="eduInfo">
           <h1>National Public School, Indiranagar</h1>
-          <h2>Class XII : 97.60 %</h2>
-          <h2>Class X : CGPA 10.0, Percentile 99.9946</h2>
+          <h2>XII: 97.60 %</h2>
+          <h2>X: Percentile 99.9946, CGPA 10.0</h2>
           <h3>Central Board of Secondary Education (CBSE)</h3>
           <h3>1998 - 2012</h3>
         </div>
       </div>
 
       <div id="educationText">
-        <h1 id="educationHeader">Education</h1>
+        <h1>Education</h1>
       </div>
 
     </div>
 
     <!-- Third page -->
-    <div id="myThirdPage" align="center" class="fullPageDiv">
+    <div id="myProjPage" align="center" class="fullPageDiv">
 
       <div id="publicationsContainer">
-        <h1 id="publicationsHeader">Publications</h1>
+        <h1>Publications</h1>
         <h2>DTLB: Deterministic TLB for Tightly Bound Hard Real-time Systems</h2>
         <h3>Kajal Varma, Geeta Patil, Biju Raveendran</h3>
         <h3>VLSID 2017</h3>
         <br><br>
-        <p style="text-align: justify;">This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per access time. DTLB offers tighter upper bound on worst case execution time of real time tasks. This is achieved by backing TLB contents of executing task to PCB on preemption and transferring contents in PCB back to TLB when task resumes its execution. Experimental results carried out using MemSim – a single clock cycle simulator developed in Java with Swing GUI – shows that DTLB gives the least number of TLB misses as compared to conventional TLB model and Reservation based TLB model. DTLB offers on an average 6.74% and 4.91% of dynamic energy savings over conventional model and Reservation based model respectively. Effective access time of DTLB is on an average 2.97% and 2.09% less as compared to conventional and Reservation based model respectively.</p>
-        <a id="paperLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Paper</a>
+        <p>This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per access time. DTLB offers tighter upper bound on worst case execution time of real time tasks. This is achieved by backing TLB contents of executing task to PCB on preemption and transferring contents in PCB back to TLB when task resumes its execution. Experimental results carried out using MemSim – a single clock cycle simulator developed in Java with Swing GUI – shows that DTLB gives the least number of TLB misses as compared to conventional TLB model and Reservation based TLB model.</p>
+        <a class="blockLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Paper</a>
       </div>
 
       <div id="projectsContainer">
@@ -141,93 +147,110 @@
     </div>
 
     <!-- Fourth page -->
-    <div id="myFourthPage" align="center" class="fullPageDiv">
+    <div id="myWorkPage" align="center" class="fullPageDiv">
       <div id="workExperienceText">
-        <h1 id="workExperienceHeader">Work Experience</h1>
+        <h1>Work Experience</h1>
       </div>
 
       <div id="workExContainer">
 
-        <table id="workExTable">
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+          <div class="role" align="right">Software Engineer I</div>
+          <div class="org" align="left">Intuit India</div>
+          <div class="duration" align="right">August 2016 - Present</div>
+          <div class="desc" align="left">Software developer in the TurboTax Desktop team, Consumer Tax Group. Working on library framework development and Windows application development.</div>
+        </div>
 
-          <tr>
-            <td class="tdRight">
-                <p>Software Engineer I</p>
-                <p>Intuit India</p>
-                <p>August 2016 - Present</p>
-                <p>TurboTax Desktop team</p>
-            </td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdLeft"></td>
-          </tr>
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+          <div class="role" align="right">Intern</div>
+          <div class="org" align="left">Intuit India</div>
+          <div class="duration" align="right">May 2015 - July 2015</div>
+          <div class="desc" align="left">Part of Consumer Tax Group, TurboTax Android team. Worked on Android and web application development.</div>
+        </div>
 
-          <tr>
-            <td class="tdRight"></td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdLeft">
-                <p>Teaching Assistant</p>
-                <p>Data Storage Technologies and Networks</p>
-                <p>BITS Pilani - K. K. Birla Goa Campus</p>
-                <p>January 2016 - May 2016</p>
-            </td>
-          </tr>
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+          <div class="role" align="right">Intern</div>
+          <div class="org" align="left">RailTel Corp of India Ltd</div>
+          <div class="duration" align="right">May 2014 - July 2014</div>
+          <div class="desc" align="left">Summer internship at RailTel Corporation of India Ltd as a part of BITS Pilani's PS-I (Practice School-I) programme.</div>
+        </div>
 
-          <tr>
-            <td class="tdRight">
-                <p>Intern</p>
-                <p>Intuit India</p>
-                <p>May 2015 - July 2015</p>
-                <p>TurboTax Android team</p>
-            </td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdCenter"></td>
-          </tr>
+<!--
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-graduation-cap" aria-hidden="true"></i></i></div>
+          <div class="role" align="right">Teaching Assistant</div>
+          <div class="org" align="left">Data Storage Tech &amp; Networks</div>
+          <div class="duration" align="right">January 2016 - May 2016</div>
+          <div class="desc" align="left">Worked as a TA for DSTN at BITS Pilani - K. K. Birla Goa Campus.</div>
+        </div>
+-->
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-graduation-cap" aria-hidden="true"></i></i></div>
+          <div class="role" align="right">Teaching Assistant</div>
+          <div class="org" align="left">Computer Architecture</div>
+          <div class="duration" align="right">August 2015 - December 2015</div>
+          <div class="desc" align="left">Worked as a TA for CA at BITS Pilani - K. K. Birla Goa Campus.</div>
+        </div>
 
-          <tr>
-            <td class="tdRight"></td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdLeft">
-                <p>Teaching Assistant</p>
-                <p>Computer Architecture</p>
-                <p>BITS Pilani - K. K. Birla Goa Campus</p>
-                <p>August 2015 - December 2015</p>
-            </td>
-          </tr>
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-graduation-cap" aria-hidden="true"></i></i></div>
+          <div class="role" align="right">Professional Assistant</div>
+          <div class="org" align="left">Computer Programming</div>
+          <div class="duration" align="right">January 2015 - May 2015</div>
+          <div class="desc" align="left">Worked as a PA for CP at BITS Pilani - K. K. Birla Goa Campus.</div>
+        </div>
 
-          <tr>
-            <td class="tdRight">
-                <p>Intern</p>
-                <p>RailTel Corp of India Ltd</p>
-                <p>May 2014 - July 2014</p>
-                <p>BITS Pilani's PS-I (Practice School-I) programme</p>
-            </td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdLeft"></td>
-          </tr>
-
-          <tr>
-            <td class="tdRight"></td>
-            <td class="tdCenter"><img class="workIcon" src="img/workicon.png" /></td>
-            <td class="tdLeft">
-                <p>Professional Assistant</p>
-                <p>Computer Programming</p>
-                <p>BITS Pilani - K. K. Birla Goa Campus</p>
-                <p>January 2015 - May 2015</p>
-            </td>
-          </tr>
-
-        </table>
       </div>
     </div>
 
     <!-- Fifth page -->
-    <div id="myFifthPage" align="center" class="fullPageDiv">
-      <div id="skillsText">
-        <h1 id="skillsHeader">Skills and Awards</h1>
+    <div id="myAwardsPage" align="center" class="fullPageDiv">
+      <div id="awardsText">
+        <h1>Awards</h1>
+      </div>
+
+      <div id="awardsInfo">
+
+        <div class="awardBox" id="one">
+          <h1>National Cyber Olympiad</h1>
+          <p>All-India Rank 17<br />Karnataka Rank 1</p>
+          <h3>June 2012</h3>
+          <h4>Science Olympiad Foundation</h4>
+        </div>
+
+        <div class="awardBox" id="two">
+          <h1>Mridula Endowment Award</h1>
+          <p>School topper in the CBSE Board Examination, with a CGPA of 10.0 and an overall percentile of 99.9946.</p>
+          <h3>June 2011</h3>
+          <h4>National Public School, Indiranagar, Bangalore</h4>
+        </div>
+<!--
+        <div class="skillBox" id="three">
+          <h1>CBSE Science Scholarship</h1>
+          <h3>June 2012</h3>
+          <br>Stood amongst the top 1% in India in Class XII CBSE Exam, earning the eligibility of a scholarship from CBSE.
+        </div>
+-->
+
+        <div id="skillsText">
+          <h1>Skills</h1>
+        </div>
+
+        <div id="skillsInfo">
+          C&nbsp;&nbsp;&nbsp;C++&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;&nbsp;C#<br />
+          Linux/UNIX&nbsp;&nbsp;&nbsp;Android application development<br />
+          Web development: JavaScript&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;HTML/CSS<br />
+          SQL&nbsp;&nbsp;&nbsp;Verilog&nbsp;&nbsp;&nbsp;Objective-C&nbsp;&nbsp;&nbsp;Swift
+        </div>
+
       </div>
     </div>
 
     <!-- Scripts -->
+    <script src="https://use.fontawesome.com/083607efe7.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

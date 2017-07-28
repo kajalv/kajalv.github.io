@@ -1,0 +1,35 @@
+/*
+Full page
+*/
+
+/*
+Colors:
+Lime green: bee170
+Yellow matching dp: fde4b2
+*/
+
+*
+{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  background: #000000;
+}
+
+.fullPageDiv
+{
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
