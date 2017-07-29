@@ -14,7 +14,6 @@ Publications and projects page
   left: 0%;
   width: 40%;
   height: 100%;
-  overflow: hidden;
   background: #009999;
   padding: 20px;
 }
@@ -51,7 +50,6 @@ Publications and projects page
   left: 40%;
   width: 60%;
   height: 100%;
-  overflow: hidden;
 }
 
 #projectsTable
@@ -120,7 +118,7 @@ a.blockLink
 
 a.blockLink:hover
 {
-  cursor: crosshair;
+  cursor: pointer;
   text-decoration: none;
   background: #007777;
 }
