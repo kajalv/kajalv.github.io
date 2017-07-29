@@ -12,17 +12,15 @@ Awards and skills page
   position: absolute;
   top: 0%;
   left: 5%;
-  opacity: 1;
   z-index: 3;
 }
 
 #skillsText
 {
-  position: absolute;
-  top: 60%;
+  position: relative;
+  top: 0%;
   left: 5%;
-  opacity: 1;
-  z-index: 3;
+  text-align: left;
 }
 
 #skillsText h1, #awardsText h1
@@ -43,7 +41,8 @@ Awards and skills page
 
 #skillsInfo
 {
-  margin-top: 90px;
+  position: relative;
+  margin-top: 20px;
   top: 0%;
   left: 0%;
   color: black;
@@ -53,13 +52,30 @@ Awards and skills page
 .awardBox
 {
   position: relative;
-  display: inline-block;
+  top: 0%;
+  left: 0%;
+  display: inline-grid;
   margin: 50px;
-  padding: 10px;
+  padding: 20px;
   font-size: 12pt;
   color: black;
-  height: 300px;
-  width: 400px;
+  height: auto;
+  width: 40%;
+  background: white;
+}
+
+.awardBox i.fa-trophy
+{
+  font-size: 50pt;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.awardBox i.fa-circle
+{
+  color: black;
+  font-size: 10pt;
+  margin: 0 5px 0 5px;
 }
 
 .awardBox p
@@ -67,23 +83,36 @@ Awards and skills page
   color: black;
 }
 
-#one
+p.awardDesc
 {
-  position: relative;
-  top: 0%;
-  left: 0%;
+  font-size: 20px;
 }
 
-#two
+p.awardName
 {
-  position: relative;
-  top: 0%;
-  left: 0%;
+  font-size: 35px;
 }
 
-#three
+p.awarderInfo
 {
-  position: relative;
-  top: 0%;
-  left: 0%;
+  font-size: 15px;
+}
+
+.listOfSkills
+{
+  margin-bottom: 50px;
+}
+
+.listOfSkills td
+{
+  padding: 10px 0px 10px 150px;
+  color: black;
+  font-size: 20pt;
+}
+
+.listOfSkills i.fa-star
+{
+  color: black;
+  font-size: 15pt;
+  margin-right: 10px;
 }

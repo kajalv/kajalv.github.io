@@ -13,6 +13,7 @@ Home page
   position: absolute;
   top: 10%;
   right: 20%;
+  z-index: 1;
 }
 
 #displayPicContainer img
@@ -24,23 +25,46 @@ Home page
 
 #introContainer
 {
-  position: absolute;
-  top: 30%;
-  right: 7%;
+  position: relative;
+  top: 100px;
   text-align: right;
+  height: auto;
+  padding-right: 7%;
+  z-index: 2;
 }
 
-#introContainer h1
+p.introHeader
 {
   color: #000000;
   font-size: 130px;
   font-weight: bold;
 }
 
-#introContainer p
+p.subTitle
 {
   color: #000000;
   font-size: 40px;
+}
+
+#aboutMe
+{
+  background: #fde4b2;
+  color: black;
+  margin-top: 25px;
+  padding: 20px;
+  font-size: 15pt;
+  text-align: justify;
+  opacity: .7;
+  width: 100%;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  width: 50%;
+}
+
+#aboutMe p
+{
+  color: black;
 }
 
 #contactContainer
@@ -49,6 +73,7 @@ Home page
   top: 10%;
   left: 5%;
   width: 15%;
+  z-index: 3;
 }
 
 .contactLink

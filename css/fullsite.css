@@ -33,3 +33,31 @@ body
   width: 100%;
   overflow: hidden;
 }
+
+#siteFooter
+{
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 10pt;
+}
+
+a.navToTop
+{
+  width: 10%;
+  text-transform: uppercase;
+  border: 1px solid black;
+  color: white;
+  padding: 20px;
+}
+
+a.navToTop i
+{
+  color: white;
+}
+
+a.navToTop:hover
+{
+  text-decoration: none;
+  opacity: .5;
+  cursor: crosshair;
+}

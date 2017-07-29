@@ -21,16 +21,25 @@ Publications and projects page
 
 #publicationsContainer h1
 {
-  font-size: 30px;
+  font-size: 30pt;
   text-transform: uppercase;
   letter-spacing: 3pt;
   margin-bottom: 10%;
 }
 
-#publicationsContainer p
+#publicationsContainer div.publicationDesc
 {
+  margin-top: 25px;
+  padding: 20px;
   font-size: 12pt;
   text-align: justify;
+  background: #dddddd;
+  color: black;
+}
+
+#publicationsContainer div.publicationDesc p
+{
+  color: black;
 }
 
 #projectsContainer
@@ -52,55 +61,66 @@ Publications and projects page
   border: 1px solid black;
 }
 
-#projectsTable td
+#projectsTable td:not(.midTile)
 {
   width: 30%;
   height: 30%;
-  border: 1px solid black;
-}
-
-#projectsTable .nonCenter
-{
+  border: 10px solid #009999;
   text-align: left;
   vertical-align: top;
   padding: 10px;
+  background: #dddddd;
+  padding: 30px;
+  color: gray;
 }
 
-#projectsTable td.nonCenter:hover
+p.projTitle
 {
-  /*opacity: .5;*/
+  position: relative;
+  top: 20px;
+  color: black;
 }
 
-#ptd5
+p.projDuration
 {
-  background: #002222;
-  text-align: center;
-  vertical-align: center;
-  font-size: 30px;
+  position: relative;
+  top: 30px;
+  color: gray;
+}
+
+#projectsTable td.midTile
+{
+  background: #009999;
+  font-size: 30pt;
   text-transform: uppercase;
   letter-spacing: 3pt;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
 }
 
+/* Old colors: 002222, 008090
 #ptd1, #ptd3, #ptd7, #ptd9 { background: #002222; }
 #ptd2, #ptd4, #ptd6, #ptd8 { background: #008090; }
+*/
 
 a.blockLink
 {
   display: block;
-  width: 40%;
+  width: 50%;
   padding: 20px;
-  background: #dddddd;
-  opacity: .5;
-  border: 2px solid black;
+  background: #009999;
+  border: 0px solid black;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 3pt;
-  margin-top: 30px;
+  margin: 30px 0px 20px 0px;
+  color: white;
 }
 
 a.blockLink:hover
 {
   cursor: crosshair;
   text-decoration: none;
-  opacity: 1;
+  background: #007777;
 }

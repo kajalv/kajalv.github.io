@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
     <meta charset="utf-8">
@@ -21,17 +22,22 @@
 
   <body>
     <!-- Main content -->
+    <a name="top"></a>
     <div id="myHomePage" align="center" class="fullPageDiv">
-
-      <!-- Display pic -->
-      <div id="displayPicContainer" align="right">
-        <img src="img/displayPic.jpg" />
-      </div>
 
       <!-- Front page text -->
       <div id="introContainer">
-        <h1>I'm Kajal Varma.</h1>
-        <p>Software engineer. Student. Learner. Dreamer.</p>
+        <p class="introHeader">I'm Kajal Varma.</p>
+        <p class="subTitle">Software engineer. Student. Learner. Dreamer.</p>
+        <div id="aboutMe" align="right">
+          <p>
+            I'm currently a software engineer, working as a developer at Intuit India.
+            I graduated from Birla Institute of Technology and Science - Pilani, Goa in 2016, with a bachelor's degree in computer science.
+          </p>
+          <p>
+            I enjoy reading fiction, creating art, writing blogs, and learning about the world around me.
+          </p>
+        </div>
       </div>
 
       <!-- Contact icons -->
@@ -51,6 +57,11 @@
         <div class="contactLink">
           <a href="https://stackoverflow.com/users/3369262/kv-333" target="_blank"><img class="leftImg" src="img/stackoverflow.png" /></a>
         </div>
+      </div>
+
+      <!-- Display pic -->
+      <div id="displayPicContainer" align="right">
+        <img src="img/displayPic.jpg" />
       </div>
 
     </div>
@@ -93,52 +104,54 @@
         <h2>DTLB: Deterministic TLB for Tightly Bound Hard Real-time Systems</h2>
         <h3>Kajal Varma, Geeta Patil, Biju Raveendran</h3>
         <h3>VLSID 2017</h3>
-        <br><br>
-        <p>This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per access time. DTLB offers tighter upper bound on worst case execution time of real time tasks. This is achieved by backing TLB contents of executing task to PCB on preemption and transferring contents in PCB back to TLB when task resumes its execution. Experimental results carried out using MemSim – a single clock cycle simulator developed in Java with Swing GUI – shows that DTLB gives the least number of TLB misses as compared to conventional TLB model and Reservation based TLB model.</p>
-        <a class="blockLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Paper</a>
+        <div class="publicationDesc">
+          <p>This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per access time. DTLB offers tighter upper bound on worst case execution time of real time tasks. This is achieved by backing TLB contents of executing task to PCB on preemption and transferring contents in PCB back to TLB when task resumes its execution. Experimental results carried out using MemSim – a single clock cycle simulator developed in Java with Swing GUI – shows that DTLB gives the least number of TLB misses as compared to conventional TLB model and Reservation based TLB model.</p>
+
+          <center><a class="blockLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Publication</a></center>
+        </div>
       </div>
 
       <div id="projectsContainer">
         <table id="projectsTable">
           <tr>
-            <td id="ptd1" class="nonCenter">
-              Energy Estimation of High Performance Computing Applications<br>
-              January 2016 - June 2016
+            <td id="ptd1">
+              <p class="projTitle">Energy Estimation of High Performance Computing Applications</p>
+              <p class="projDuration">January 2016 - June 2016</p>
             </td>
-            <td id="ptd2" class="nonCenter">
-              Creation of Modified-EDF scheduler with Slack Stealing and Resource Blocking<br>
-              August 2015 - December 2015
+            <td id="ptd2">
+              <p class="projTitle">Creation of Modified-EDF scheduler with Slack Stealing and Resource Blocking</p>
+              <p class="projDuration">August 2015 - December 2015</p>
             </td>
-            <td id="ptd3" class="nonCenter">
-              Battleship Network Game Using Socket Programming<br>
-              October 2015 - November 2015
+            <td id="ptd3">
+              <p class="projTitle">Battleship Network Game Using Socket Programming</p>
+              <p class="projDuration">October 2015 - November 2015</p>
             </td>
           </tr>
           <tr>
-            <td id="ptd4" class="nonCenter">
-              Raspberry Pi Surveillance Camera with Motion Detection and Android Application Interface<br>
-              October 2015 - November 2015
+            <td id="ptd4">
+              <p class="projTitle">Raspberry Pi Surveillance Camera with Motion Detection and Android Application Interface</p>
+              <p class="projDuration">October 2015 - November 2015</p>
             </td>
-            <td id="ptd5">
+            <td id="ptd5" class="midTile">
               Projects
             </td>
-            <td id="ptd6" class="nonCenter">
-              Design of Scheduler and Memory for a Real-Time System<br>
-              January 2015 - May 2015
+            <td id="ptd6">
+              <p class="projTitle">Design of Scheduler and Memory for a Real-Time System</p>
+              <p class="projDuration">January 2015 - May 2015</p>
             </td>
           </tr>
           <tr>
-            <td id="ptd7" class="nonCenter">
-              Implementation of Custom Mouse Driver in Linux Kernel<br>
-              March 2015 - April 2015
+            <td id="ptd7">
+              <p class="projTitle">Implementation of Custom Mouse Driver in Linux Kernel</p>
+              <p class="projDuration">March 2015 - April 2015</p>
             </td>
-            <td id="ptd8" class="nonCenter">
-              Memory Management in Android and RTOSes<br>
-              August 2014 - December 2014
+            <td id="ptd8">
+              <p class="projTitle">Memory Management in Android and RTOSes</p>
+              <p class="projDuration">August 2014 - December 2014</p>
             </td>
-            <td id="ptd9" class="nonCenter">
-              Phased Cache Design and Implementation<br>
-              October 2014 - November 2014
+            <td id="ptd9">
+              <p class="projTitle">Phased Cache Design and Implementation</p>
+              <p class="projDuration">October 2014 - November 2014</p>
             </td>
           </tr>
         </table>
@@ -215,17 +228,21 @@
       <div id="awardsInfo">
 
         <div class="awardBox" id="one">
-          <h1>National Cyber Olympiad</h1>
-          <p>All-India Rank 17<br />Karnataka Rank 1</p>
-          <h3>June 2012</h3>
-          <h4>Science Olympiad Foundation</h4>
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <p class="awardName">National Cyber Olympiad</p>
+          <p class="awardDesc">
+            All-India Rank 17 and Karnataka Rank 1<br />in the National Cyber Olympiad<br />held in India.
+          </p>
+          <p class="awarderInfo">June 2012 <i class="fa fa-circle" aria-hidden="true"></i> Science Olympiad Foundation</p>
         </div>
 
         <div class="awardBox" id="two">
-          <h1>Mridula Endowment Award</h1>
-          <p>School topper in the CBSE Board Examination, with a CGPA of 10.0 and an overall percentile of 99.9946.</p>
-          <h3>June 2011</h3>
-          <h4>National Public School, Indiranagar, Bangalore</h4>
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <p class="awardName">Mridula Endowment Award</p>
+          <p class="awardDesc">
+            School topper in the CBSE Board Examination<br />with an overall percentile of 99.9946<br />and a CGPA of 10.0.
+          </p>
+          <p class="awarderInfo">June 2011 <i class="fa fa-circle" aria-hidden="true"></i> National Public School</p>
         </div>
 <!--
         <div class="skillBox" id="three">
@@ -240,13 +257,36 @@
         </div>
 
         <div id="skillsInfo">
-          C&nbsp;&nbsp;&nbsp;C++&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;&nbsp;C#<br />
-          Linux/UNIX&nbsp;&nbsp;&nbsp;Android application development<br />
-          Web development: JavaScript&nbsp;&nbsp;&nbsp;jQuery&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;HTML/CSS<br />
-          SQL&nbsp;&nbsp;&nbsp;Verilog&nbsp;&nbsp;&nbsp;Objective-C&nbsp;&nbsp;&nbsp;Swift
+          <table class="listOfSkills">
+            <tr>
+              <td><i class="fa fa-star" aria-hidden="true"></i>C++, C</td>
+              <td><i class="fa fa-star" aria-hidden="true"></i>Linux/UNIX</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-star" aria-hidden="true"></i>Java</td>
+              <td><i class="fa fa-star" aria-hidden="true"></i>Android app development</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-star" aria-hidden="true"></i>Python</td>
+              <td><i class="fa fa-star" aria-hidden="true"></i>JavaScript, jQuery</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-star" aria-hidden="true"></i>SQL</td>
+              <td><i class="fa fa-star" aria-hidden="true"></i>HTML, CSS</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-star" aria-hidden="true"></i>Verilog</td>
+              <td></td>
+            </tr>
+          </table>
         </div>
 
       </div>
+    </div>
+
+    <div id="siteFooter">
+      Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 kajalv.com
+      <center><a class="navToTop" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a></center>
     </div>
 
     <!-- Scripts -->
