@@ -4,18 +4,19 @@ Publications and projects page
 
 #myProjPage
 {
-  background-color: teal;
+  background-color: #009999;
 }
 
 #publicationsContainer
 {
-  position: absolute;
+  height: auto;
+  position: relative;
   top: 0%;
-  left: 0%;
+  float: left;
   width: 40%;
-  height: 100%;
   background: #009999;
   padding: 20px;
+  text-align: center;
 }
 
 #publicationsContainer h1
@@ -45,28 +46,24 @@ Publications and projects page
 {
   font-size: 13pt;
   letter-spacing: 1pt;
-  position: absolute;
-  top: 0%;
-  left: 40%;
+  position: relative;
+  float: right;
   width: 60%;
-  height: 100%;
 }
 
 #projectsTable
 {
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  table-layout: fixed;
 }
 
 #projectsTable td:not(.midTile)
 {
-  width: 30%;
-  height: 30%;
+  height: 100%;
   border: 10px solid #009999;
   text-align: left;
   vertical-align: top;
-  padding: 10px;
   background: #dddddd;
   padding: 30px;
   color: gray;
@@ -74,15 +71,11 @@ Publications and projects page
 
 p.projTitle
 {
-  position: relative;
-  top: 20px;
   color: black;
 }
 
 p.projDuration
 {
-  position: relative;
-  top: 30px;
   color: gray;
 }
 
