@@ -19,6 +19,15 @@ Publications and projects page
   text-align: center;
 }
 
+#projectsContainer
+{
+  font-size: 13pt;
+  letter-spacing: 1pt;
+  position: relative;
+  float: right;
+  width: 60%;
+}
+
 #publicationsContainer h1
 {
   font-size: 30pt;
@@ -40,15 +49,6 @@ Publications and projects page
 #publicationsContainer div.publicationDesc p
 {
   color: black;
-}
-
-#projectsContainer
-{
-  font-size: 13pt;
-  letter-spacing: 1pt;
-  position: relative;
-  float: right;
-  width: 60%;
 }
 
 #projectsTable
@@ -81,6 +81,7 @@ p.projDuration
 
 #projectsTable td.midTile
 {
+  word-wrap: break-word;
   background: #009999;
   font-size: 30pt;
   text-transform: uppercase;
@@ -98,7 +99,7 @@ p.projDuration
 a.blockLink
 {
   display: block;
-  width: 50%;
+  width: 70%;
   padding: 20px;
   background: #009999;
   border: 0px solid black;
@@ -114,4 +115,29 @@ a.blockLink:hover
   cursor: pointer;
   text-decoration: none;
   background: #007777;
+}
+
+@media screen and (max-width: 768px)
+{
+  #publicationsContainer
+  {
+    height: auto;
+    position: relative;
+    top: 0%;
+    float: none;
+    width: 100%;
+    background: #009999;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #projectsContainer
+  {
+    font-size: 13pt;
+    letter-spacing: 1pt;
+    position: relative;
+    top: 0%;
+    float: none;
+    width: 100%;
+  }
 }

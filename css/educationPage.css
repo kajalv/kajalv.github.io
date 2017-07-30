@@ -11,7 +11,8 @@ Education page
 {
   position: absolute;
   top: 0%;
-  left: 35%;
+  width: 100%;
+  text-align: center;
   opacity: 1;
   z-index: 3;
 }
@@ -19,7 +20,7 @@ Education page
 #educationText h1
 {
   color: #ffffff;
-  font-size: 70px;
+  font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3pt;
   z-index: 3;
@@ -33,12 +34,13 @@ Education page
   width: 80%;
   color: #ffffff;
   font-size: 30px;
-  position: absolute;
+  position: relative;
   top: 10%;
   margin: 10%;
   color: black;
   padding: 10%;
   text-align: left;
+  overflow: scroll;
 }
 
 .eduContainer
@@ -72,4 +74,64 @@ Education page
 {
   height: 100%;
   opacity: .5;
+}
+
+.eduInfo p
+{
+  color: black;
+  margin-bottom: 20px;
+}
+
+.eduInfo p.eduName
+{
+  line-height: 38px;
+  color: black;
+  font-size: 35px;
+}
+
+.eduInfo p.eduScore
+{
+  color: black;
+  font-size: 30px;
+}
+
+.eduInfo p.eduDetails
+{
+  color: black;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px)
+{
+  .eduContainer
+  {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  #bitsContainer div.eduInfo
+  {
+    top: 30px;
+  }
+
+  #bitsContainer
+  {
+    top: 0%;
+    left: 0%;
+    background-image: url('../img/bits.jpg');
+    background-position: left;
+  }
+
+  #npsContainer
+  {
+    top: 0%;
+    left: 0%;
+    background-image: url('../img/nps.jpg');
+    background-position: right;
+  }
 }

@@ -5,28 +5,18 @@ Home page
 #myHomePage
 {
   background-color: #fde4b2;
-}
-
-#displayPicContainer
-{
-  height: 80%;
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  z-index: 1;
-}
-
-#displayPicContainer img
-{
-  height: 100%;
-  border-radius: 50%;
-  opacity: .5;
+  background-image: url('../img/circularDisplayPic.png');
+  background-position: right 20% center;
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
 #introContainer
 {
   position: relative;
   top: 100px;
+  width: 70%;
+  float: right;
   text-align: right;
   height: auto;
   padding-right: 7%;
@@ -46,6 +36,11 @@ p.subTitle
   font-size: 40px;
 }
 
+/*
+Note to self - about me is not a part of the intro container div, because I need to set
+a different background colour. I also cannot just do it for the <p> tag because I have
+two paragraphs and need them both to be in the same block.
+*/
 #aboutMe
 {
   background: #fde4b2;
@@ -55,11 +50,10 @@ p.subTitle
   font-size: 15pt;
   text-align: justify;
   opacity: .7;
-  width: 100%;
   position: relative;
   top: 0%;
-  left: 50%;
-  width: 50%;
+  left: 30%;
+  width: 70%;
 }
 
 #aboutMe p
@@ -69,23 +63,15 @@ p.subTitle
 
 #contactContainer
 {
-  position: absolute;
-  top: 10%;
+  position: relative;
+  float: left;
+  top: 30px;
   left: 5%;
   width: 15%;
   z-index: 3;
 }
 
-.contactLink
-{
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: .8;
-  margin-bottom: 40px;
-}
-
-.contactLink img
+#contactContainer img
 {
   height: 80px;
   width: 80px;
@@ -93,9 +79,10 @@ p.subTitle
   opacity: .5;
   border: 2px solid black;
   box-shadow: 5px;
+  margin-bottom: 40px;
 }
 
-.contactLink img:hover
+#contactContainer img:hover
 {
   opacity: .9;
 }
@@ -110,4 +97,77 @@ p.subTitle
 {
   margin-left: 50%;
   text-align: right;
+}
+
+@media screen and (max-width: 768px)
+{
+  #myHomePage
+  {
+    background-color: #fde4b2;
+    background-image: url('../img/circularDisplayPic.png');
+    background-position: top 100px center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+
+  p.introHeader
+  {
+    font-size: 80px;
+  }
+
+  p.subTitle
+  {
+    font-size: 30px;
+  }
+
+  #introContainer
+  {
+    position: relative;
+    top: 0%;
+    float: none;
+    width: 100%;
+  }
+
+  #aboutMe
+  {
+    position: relative;
+    top: 0%;
+    float: none;
+    left: 0%;
+    width: 100%;
+  }
+
+  #contactContainer
+  {
+    position: relative;
+    float: none;
+    top: 30px;
+    left: 5%;
+    z-index: 3;
+    width: 100%;
+  }
+
+  #contactContainer img
+  {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    opacity: .5;
+    border: 2px solid black;
+    box-shadow: 5px;
+    margin-bottom: 80px;
+  }
+
+  .leftImg
+  {
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .rightImg
+  {
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: left;
+  }
 }

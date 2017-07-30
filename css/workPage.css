@@ -19,7 +19,7 @@ Work experience page
 #workExperienceText h1
 {
   color: #000000;
-  font-size: 70px;
+  font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3pt;
   z-index: 3;
@@ -95,4 +95,61 @@ Work experience page
   border: 2px solid black;
   font-size: 30px;
   padding: 5px;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+  .workExBox
+  {
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .role
+  {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .org
+  {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .duration
+  {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .desc
+  {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    font-size: 17px;
+    padding-top: 20px;
+  }
+
+  .workLogo
+  {
+    position: relative;
+    top: 0px;
+    left: 0%;
+  }
 }
