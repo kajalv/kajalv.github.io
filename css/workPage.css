@@ -4,7 +4,8 @@ Work experience page
 
 #myWorkPage
 {
-  background-color: skyblue;
+  background-color: white;
+  background-image: url('../img/whiteSnow.png');
 }
 
 #workExperienceText
@@ -18,7 +19,7 @@ Work experience page
 
 #workExperienceText h1
 {
-  color: #000000;
+  color: black;
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3pt;
