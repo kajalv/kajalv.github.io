@@ -141,3 +141,18 @@ a.blockLink:hover
     width: 100%;
   }
 }
+
+@media screen and (max-width: 500px)
+{
+  #projectsTable td:not(.midTile)
+  {
+    padding: 10px;
+    font-size: 8pt;
+    word-wrap: break-word;
+  }
+
+  a.blockLink
+  {
+    word-wrap: break-word;
+  }
+}

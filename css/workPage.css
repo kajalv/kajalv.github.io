@@ -107,6 +107,12 @@ Work experience page
     padding-top: 20px;
   }
 
+  .role, .org, .duration, .desc
+  {
+    color: black;
+    width: 65%;
+  }
+
   .role
   {
     position: relative;
@@ -151,5 +157,15 @@ Work experience page
     position: relative;
     top: 0px;
     left: 0%;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  #workExperienceText h1
+  {
+    font-size: 40px;
+    letter-spacing: 1pt;
+    word-wrap: break-word;
   }
 }
