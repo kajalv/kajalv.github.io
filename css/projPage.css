@@ -108,6 +108,7 @@ a.blockLink
   letter-spacing: 3pt;
   margin: 30px 0px 20px 0px;
   color: white;
+  transition: background 1s;
 }
 
 a.blockLink:hover

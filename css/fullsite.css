@@ -34,6 +34,12 @@ body
   overflow: hidden;
 }
 
+.notFullPageDiv
+{
+  position: relative;
+  width: 100%;
+}
+
 #siteFooter
 {
   padding: 30px;
@@ -48,6 +54,7 @@ a.navToTop
   border: 1px solid black;
   color: white;
   padding: 20px;
+  transition: opacity 1s;
 }
 
 a.navToTop i

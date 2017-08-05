@@ -26,7 +26,7 @@ Awards and skills page
 #skillsText h1, #awardsText h1
 {
   color: #000000;
-  font-size: 70px;
+  font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 3pt;
   z-index: 3;

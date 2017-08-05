@@ -78,8 +78,9 @@ two paragraphs and need them both to be in the same block.
   border-radius: 50%;
   opacity: .5;
   border: 2px solid black;
-  box-shadow: 5px;
+  box-shadow: 5px 5px 5px #888888;
   margin-bottom: 40px;
+  transition: opacity 1s;
 }
 
 #contactContainer img:hover
@@ -154,7 +155,7 @@ two paragraphs and need them both to be in the same block.
     border-radius: 50%;
     opacity: .5;
     border: 2px solid black;
-    box-shadow: 5px;
+    box-shadow: 5px 5px 5px #888888;
     margin-bottom: 80px;
   }
 
