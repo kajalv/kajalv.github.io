@@ -26,6 +26,7 @@ Publications and projects page
   position: relative;
   float: right;
   width: 60%;
+  padding-bottom: 20px;
 }
 
 #publicationsContainer h1
