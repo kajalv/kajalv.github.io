@@ -41,8 +41,9 @@ Hobbies
   position: relative;
   top: 0%;
   left: 0%;
-  display: inline-grid;
-  margin: 0px 10px 0px 10px;
+  display: inline-block;
+  width: 500px;
+  margin: 10px;
   padding: 20px;
   font-size: 15pt;
   height: auto;
@@ -75,4 +76,18 @@ Hobbies
 .hobbyDesc
 {
   color: black;
+}
+
+@media screen and (max-width: 500px)
+{
+  .hobbyContainer
+  {
+    width: auto;
+  }
+
+  .hobbyContainer img
+  {
+    width: 100px;
+    height: 100px;
+  }
 }
