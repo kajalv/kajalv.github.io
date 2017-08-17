@@ -97,6 +97,25 @@ p.projDuration
 #ptd2, #ptd4, #ptd6, #ptd8 { background: #008090; }
 */
 
+p.pubInfo
+{
+  font-size: 24px;
+}
+
+p.pubInfo a
+{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: opacity 1s;
+  padding: 5px;
+}
+
+p.pubInfo a:hover
+{
+  opacity: .5;
+}
+
 a.blockLink
 {
   display: block;
