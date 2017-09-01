@@ -15,7 +15,7 @@ Home page
 {
   position: relative;
   top: 100px;
-  width: 70%;
+  width: 75%;
   float: right;
   text-align: right;
   height: auto;
@@ -26,7 +26,7 @@ Home page
 p.introHeader
 {
   color: #000000;
-  font-size: 130px;
+  font-size: 100px;
   font-weight: bold;
 }
 
