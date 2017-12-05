@@ -6,6 +6,7 @@ Work experience page
 {
   background-color: white;
   background-image: url('../img/whiteSnow.png');
+  background-attachment: fixed;
 }
 
 #workExperienceText

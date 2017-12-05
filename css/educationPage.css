@@ -101,6 +101,16 @@ Education page
   font-size: 25px;
 }
 
+.eduLink
+{
+  font-size: 20px;
+}
+
+.eduLink i
+{
+  color: teal;
+}
+
 @media screen and (max-width: 768px)
 {
   .eduContainer

@@ -4,7 +4,9 @@ Awards and skills page
 
 #myAwardsPage
 {
-  background-color: #fde4b2;
+  background-color: #a5d175;
+  background-image: url('../img/greenbg.jpg');
+  background-attachment: fixed;
 }
 
 #awardsText
@@ -60,8 +62,9 @@ Awards and skills page
   font-size: 12pt;
   color: black;
   height: auto;
-  width: 40%;
+  width: 25%;
   background: white;
+  opacity: .7;
 }
 
 .awardBox i.fa-trophy

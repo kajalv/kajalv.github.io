@@ -100,6 +100,16 @@ two paragraphs and need them both to be in the same block.
   text-align: right;
 }
 
+#resumeLink
+{
+  width: 320px;
+  padding: 20px;
+  background: #fde4b2;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
 @media screen and (max-width: 768px)
 {
   #myHomePage
