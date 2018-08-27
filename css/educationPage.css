@@ -47,7 +47,7 @@ Education page
 {
   position: absolute;
   top: 0%;
-  width: 50%;
+  width: 33%;
   height: 100%;
   overflow: hidden;
   z-index: 2;
@@ -56,16 +56,23 @@ Education page
   background-size: cover;
 }
 
-#bitsContainer
+#gatechContainer
 {
   left: 0%;
+  background-image: url('../img/klaus.png');
+  background-position: left;
+}
+
+#bitsContainer
+{
+  left: 33%;
   background-image: url('../img/bits.jpg');
   background-position: left;
 }
 
 #npsContainer
 {
-  left: 50%;
+  left: 66%;
   background-image: url('../img/nps.jpg');
   background-position: right;
 }
@@ -142,6 +149,14 @@ Education page
     top: 0%;
     left: 0%;
     background-image: url('../img/nps.jpg');
+    background-position: right;
+  }
+
+  #gatechContainer
+  {
+    top: 0%;
+    left: 0%;
+    background-image: url('../img/klaus.png');
     background-position: right;
   }
 }
