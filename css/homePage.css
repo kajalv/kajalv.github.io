@@ -104,10 +104,18 @@ two paragraphs and need them both to be in the same block.
 {
   width: 320px;
   padding: 20px;
+  height: 60px;
   background: #fde4b2;
   color: black;
   font-weight: bold;
   border: 1px solid black;
+}
+
+#resumeLink:hover
+{
+  opacity: .8;
+  font-size: 14px;
+  transition: font 0.1s;
 }
 
 @media screen and (max-width: 768px)

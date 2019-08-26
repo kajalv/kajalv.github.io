@@ -38,7 +38,7 @@ Education page
   top: 10%;
   margin: 10%;
   color: black;
-  padding: 10%;
+  padding: 5%;
   text-align: left;
   overflow: scroll;
 }
@@ -86,7 +86,7 @@ Education page
 .eduInfo p
 {
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .eduInfo p.eduName
@@ -99,13 +99,32 @@ Education page
 .eduInfo p.eduScore
 {
   color: black;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .eduInfo p.eduDetails
 {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.eduInfo b
+{
+  color: black;
+  font-weight: bolder;
+}
+
+.eduInfo i
+{
+  color: black;
+  font-size: 17px;
+}
+
+.eduInfo ul, .eduInfo ul li
+{
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
 }
 
 .eduLink

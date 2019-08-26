@@ -21,12 +21,13 @@ Publications and projects page
 
 #projectsContainer
 {
-  font-size: 13pt;
-  letter-spacing: 1pt;
+  /* font-size: 13pt; */
+  /* letter-spacing: 1pt; */
   position: relative;
   float: right;
   width: 60%;
-  padding-bottom: 20px;
+  top: 0%;
+  padding: 20px;
 }
 
 #publicationsContainer h1
@@ -35,6 +36,14 @@ Publications and projects page
   text-transform: uppercase;
   letter-spacing: 3pt;
   margin-bottom: 10%;
+}
+
+#projectsContainer h1
+{
+  font-size: 30pt;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  margin-bottom: 5%;
 }
 
 #publicationsContainer div.publicationDesc
@@ -49,6 +58,29 @@ Publications and projects page
 
 #publicationsContainer div.publicationDesc p
 {
+  color: black;
+}
+
+#projectsContainer div.projBox
+{
+  text-align: justify;
+  margin-bottom: 25px;
+  background: #dddddd;
+  padding: 10px 15px;
+  color: black;
+}
+
+#projectsContainer div.projTitle
+{
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  color: teal;
+}
+
+#projectsContainer div.projDesc
+{
+  text-align: justify;
   color: black;
 }
 
