@@ -124,6 +124,11 @@ p.projDuration
   padding: 10px;
 }
 
+a.projLink {
+  color: teal;
+  text-decoration: underline;
+}
+
 /* Old colors: 002222, 008090
 #ptd1, #ptd3, #ptd7, #ptd9 { background: #002222; }
 #ptd2, #ptd4, #ptd6, #ptd8 { background: #008090; }
