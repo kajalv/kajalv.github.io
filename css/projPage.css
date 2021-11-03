@@ -9,6 +9,7 @@ Publications and projects page
 
 #publicationsContainer
 {
+  color: black;
   height: auto;
   position: relative;
   top: 0%;
@@ -54,6 +55,7 @@ Publications and projects page
   text-align: justify;
   background: #dddddd;
   color: black;
+  border-radius: 5px;
 }
 
 #publicationsContainer div.publicationDesc p
@@ -68,12 +70,13 @@ Publications and projects page
   background: #dddddd;
   padding: 10px 15px;
   color: black;
+  border-radius: 5px;
 }
 
 #projectsContainer div.projTitle
 {
   text-align: justify;
-  font-size: 20px;
+  font-size: 14pt;
   font-weight: bold;
   color: teal;
 }
@@ -100,11 +103,6 @@ Publications and projects page
   background: #dddddd;
   padding: 30px;
   color: gray;
-}
-
-p.projTitle
-{
-  color: black;
 }
 
 p.projDuration
@@ -136,14 +134,15 @@ a.projLink {
 
 p.pubInfo
 {
+  color: black;
   font-size: 24px;
 }
 
 p.pubInfo a
 {
-  color: white;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   transition: opacity 1s;
   padding: 5px;
 }
@@ -164,8 +163,9 @@ a.blockLink
   text-transform: uppercase;
   letter-spacing: 3pt;
   margin: 30px 0px 20px 0px;
-  color: white;
+  color: black;
   transition: background 1s;
+  border-radius: 5px;
 }
 
 a.blockLink:hover

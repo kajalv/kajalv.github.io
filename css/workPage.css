@@ -9,27 +9,9 @@ Work experience page
   background-attachment: fixed;
 }
 
-#workExperienceText
-{
-  position: absolute;
-  top: 0%;
-  left: 5%;
-  opacity: 1;
-  z-index: 3;
-}
-
-#workExperienceText h1
-{
-  color: black;
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 3pt;
-  z-index: 3;
-}
-
 #workExContainer
 {
-  padding-top: 150px;
+  padding-top: 50px;
   position: relative;
   top: 20%;
   left: 0%;
@@ -58,7 +40,7 @@ Work experience page
   position: absolute;
   top: 10px;
   left: 0%;
-  font-size: 35px;
+  font-size: 22pt;
 }
 
 .org
@@ -66,7 +48,7 @@ Work experience page
   position: absolute;
   top: 10px;
   right: 0%;
-  font-size: 30px;
+  font-size: 22pt;
 }
 
 .duration
@@ -74,7 +56,7 @@ Work experience page
   position: absolute;
   top: 70px;
   left: 0%;
-  font-size: 20px;
+  font-size: 14pt;
 }
 
 .desc
@@ -82,11 +64,12 @@ Work experience page
   position: absolute;
   top: 70px;
   right: 0%;
-  font-size: 17px;
+  font-size: 14pt;
 }
 
 .workLogo
 {
+  color: white;
   position: absolute;
   top: 30px;
   left: 47%;

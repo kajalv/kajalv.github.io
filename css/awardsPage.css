@@ -9,62 +9,32 @@ Awards and skills page
   background-attachment: fixed;
 }
 
-#awardsText
-{
-  position: absolute;
-  top: 0%;
-  left: 5%;
-  z-index: 3;
-}
-
-#skillsText
+#skillsText, #awardsText
 {
   position: relative;
-  top: 0%;
-  left: 5%;
+  padding: 5px 50px;
   text-align: left;
-}
-
-#skillsText h1, #awardsText h1
-{
-  color: #000000;
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 3pt;
-  z-index: 3;
 }
 
 #awardsInfo
 {
-  margin-top: 70px;
   top: 0%;
   left: 0%;
-}
-
-#skillsInfo
-{
-  position: relative;
-  margin-top: 20px;
-  top: 0%;
-  left: 0%;
-  color: black;
-  font-size: 20pt;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .awardBox
 {
+  min-width: 250px;
   position: relative;
-  top: 0%;
-  left: 0%;
-  display: inline-grid;
-  margin: 50px 20px 20px 20px;
+  display: block;
+  margin: 20px 30px;
   padding: 20px;
-  font-size: 12pt;
-  color: black;
-  height: auto;
   width: 20%;
   background: white;
-  opacity: .7;
+  opacity: .8;
+  border-radius: 5px;
 }
 
 .awardBox i.fa-trophy
@@ -74,13 +44,6 @@ Awards and skills page
   margin-bottom: 10px;
 }
 
-.awardBox i.fa-circle
-{
-  color: black;
-  font-size: 10pt;
-  margin: 0 5px 0 5px;
-}
-
 .awardBox p
 {
   color: black;
@@ -88,17 +51,17 @@ Awards and skills page
 
 p.awardDesc
 {
-  font-size: 20px;
+  font-size: 14pt;
 }
 
 p.awardName
 {
-  font-size: 35px;
+  font-size: 20pt;
 }
 
 p.awarderInfo
 {
-  font-size: 15px;
+  font-size: 11pt;
 }
 
 .listOfSkills
@@ -110,7 +73,8 @@ p.awarderInfo
 {
   padding: 10px 0px 10px 100px;
   color: black;
-  font-size: 20pt;
+  font-size: 15pt;
+  max-width: 700px;
 }
 
 .listOfSkills i.fa-star
