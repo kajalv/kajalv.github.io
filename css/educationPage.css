@@ -19,12 +19,7 @@ Education page
 
 #educationText h1
 {
-  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
-  color: #ffffff;
-  font-size: 50px;
-  text-transform: uppercase;
-  letter-spacing: 3pt;
-  z-index: 3;
+  color: #000; /* this used to be white but let's match the other headings */
 }
 
 .eduInfo

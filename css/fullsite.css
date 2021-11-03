@@ -52,7 +52,6 @@ a.navToTop
 {
   width: 10%;
   text-transform: uppercase;
-  border: 1px solid black;
   color: white;
   padding: 20px;
   transition: opacity 1s;
@@ -68,4 +67,17 @@ a.navToTop:hover
   text-decoration: none;
   opacity: .5;
   cursor: pointer;
+}
+
+.pageTitle h1, h1.pageTitle {
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
+  color: #000;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+.footerAction {
+  margin-top: 10px;
 }
