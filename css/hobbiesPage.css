@@ -77,11 +77,20 @@ Hobbies
   .hobbyContainer
   {
     width: auto;
+    padding: 5px;
   }
 
   .hobbyContainer img
   {
     width: 100px;
     height: 100px;
+  }
+
+  #hobbiesText h1
+  {
+    font-size: 40px;
+    letter-spacing: 1pt;
+    word-wrap: break-word;
+    text-align: center;
   }
 }

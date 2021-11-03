@@ -135,7 +135,7 @@ a.projLink {
 p.pubInfo
 {
   color: black;
-  font-size: 24px;
+  font-size: 18pt;
 }
 
 p.pubInfo a
@@ -177,6 +177,19 @@ a.blockLink:hover
 
 @media screen and (max-width: 768px)
 {
+  #publicationsContainer h1, #projectsContainer h1
+  {
+    font-size: 20pt;
+  }
+
+  #publicationsContainer h2 {
+    font-size: 16pt;
+  }
+
+  p.pubInfo {
+    font-size: 14pt;
+  }
+
   #publicationsContainer
   {
     height: auto;
@@ -191,7 +204,7 @@ a.blockLink:hover
 
   #projectsContainer
   {
-    font-size: 13pt;
+    font-size: 10pt;
     letter-spacing: 1pt;
     position: relative;
     top: 0%;
@@ -211,6 +224,13 @@ a.blockLink:hover
 
   a.blockLink
   {
+    width: 90%;
     word-wrap: break-word;
+  }
+
+  #projectsContainer div.projBox
+  {
+    max-height: 400px;
+    overflow: scroll;
   }
 }

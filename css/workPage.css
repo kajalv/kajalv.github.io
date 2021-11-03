@@ -89,7 +89,7 @@ Work experience page
   {
     width: auto;
     height: auto;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .role, .org, .duration, .desc
@@ -103,8 +103,8 @@ Work experience page
     position: relative;
     top: 0px;
     left: 0%;
-    font-size: 35px;
-    padding-top: 20px;
+    font-size: 20pt;
+    padding-top: 10px;
     text-align: center;
   }
 
@@ -113,8 +113,8 @@ Work experience page
     position: relative;
     top: 0px;
     left: 0%;
-    font-size: 30px;
-    padding-top: 20px;
+    font-size: 18pt;
+    padding-top: 10px;
     text-align: center;
   }
 
@@ -123,8 +123,8 @@ Work experience page
     position: relative;
     top: 0px;
     left: 0%;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 14pt;
+    padding-top: 10px;
     text-align: center;
   }
 
@@ -133,8 +133,9 @@ Work experience page
     position: relative;
     top: 0px;
     left: 0%;
-    font-size: 17px;
-    padding-top: 20px;
+    font-size: 12pt;
+    padding-top: 10px;
+    text-align: justify;
   }
 
   .workLogo

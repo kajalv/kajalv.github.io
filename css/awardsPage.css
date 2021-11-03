@@ -96,7 +96,15 @@ p.awarderInfo
 {
   .listOfSkills td
   {
-    padding: 10px 0px 10px 50px;
-    font-size: 10pt;
+    padding: 20px;
+    font-size: 13pt;
+  }
+
+  #awardsText h1, #skillsText h1
+  {
+    font-size: 40px;
+    letter-spacing: 1pt;
+    word-wrap: break-word;
+    text-align: center;
   }
 }
