@@ -19,8 +19,9 @@ Education page
 
 #educationText h1
 {
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 3pt;
   z-index: 3;
@@ -29,8 +30,8 @@ Education page
 .eduInfo
 {
   background: white;
-  opacity: .8;
-  height: 70%;
+  opacity: .9;
+  height: 75%;
   width: 80%;
   color: #ffffff;
   font-size: 30px;
@@ -40,7 +41,8 @@ Education page
   color: black;
   padding: 5%;
   text-align: left;
-  overflow: scroll;
+  overflow: visible;
+  border-radius: 5px;
 }
 
 .eduContainer
@@ -91,9 +93,9 @@ Education page
 
 .eduInfo p.eduName
 {
-  line-height: 38px;
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
   color: black;
-  font-size: 35px;
+  font-size: 20pt;
 }
 
 .eduInfo p.eduScore
@@ -105,19 +107,19 @@ Education page
 .eduInfo p.eduDetails
 {
   color: black;
-  font-size: 19px;
+  font-size: 13pt;
 }
 
 .eduInfo b
 {
   color: black;
-  font-weight: bolder;
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
 }
 
 .eduInfo i
 {
   color: black;
-  font-size: 17px;
+  font-size: 13pt;
 }
 
 .eduInfo ul, .eduInfo ul li
@@ -139,6 +141,10 @@ Education page
 
 @media screen and (max-width: 768px)
 {
+  #educationText h1 {
+    font-size: 40px;
+  }
+
   .eduContainer
   {
     position: relative;
@@ -146,13 +152,17 @@ Education page
     width: 100%;
     z-index: 2;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: cover;
   }
 
-  #bitsContainer div.eduInfo
+  .eduInfo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #gatechContainer div.eduInfo
   {
-    top: 30px;
+    margin-top: 100px;
   }
 
   #bitsContainer
