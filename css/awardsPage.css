@@ -94,6 +94,12 @@ p.awarderInfo
 
 @media screen and (max-width: 500px)
 {
+  .awardBox
+  {
+    width: 70%;
+    margin: 20px auto;
+  }
+
   .listOfSkills td
   {
     padding: 20px;

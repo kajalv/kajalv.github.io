@@ -166,6 +166,7 @@ Education page
     left: 0%;
     background-image: url('../img/bits.jpg');
     background-position: left;
+    background-size: cover;
   }
 
   #npsContainer
@@ -174,6 +175,7 @@ Education page
     left: 0%;
     background-image: url('../img/nps.jpg');
     background-position: right;
+    background-size: cover;
   }
 
   #gatechContainer
@@ -182,5 +184,6 @@ Education page
     left: 0%;
     background-image: url('../img/klaus.png');
     background-position: right;
+    background-size: cover;
   }
 }
