@@ -4,79 +4,84 @@ Work experience page
 
 #myWorkPage
 {
-  background-color: white;
-  background-image: url('../img/whiteSnow.png');
-  background-attachment: fixed;
+  background-color: #4B1D13;
+}
+
+#workExperienceText h1
+{
+  color: white;
 }
 
 #workExContainer
 {
   padding-top: 50px;
-  position: relative;
-  top: 20%;
-  left: 0%;
   width: 100%;
 }
 
 .workExBox
 {
   position: relative;
-  top: 0%;
-  left: 0px;
-  width: 900px;
-  height: 150px;
+  width: 60%;
+  height: 180px;
   opacity: .8;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
+  background: #FFE4B5;
+  opacity: .7;
+  border-radius: 5px;
+}
+
+.workExBox div
+{
+  color: black;
 }
 
 .role, .org, .duration, .desc
 {
   color: black;
-  width: 43%;
+  width: 40%;
 }
 
 .role
 {
   position: absolute;
   top: 10px;
-  left: 0%;
-  font-size: 22pt;
+  left: 5%;
+  font-size: 20pt;
 }
 
 .org
 {
   position: absolute;
   top: 10px;
-  right: 0%;
-  font-size: 22pt;
+  right: 5%;
+  font-size: 20pt;
 }
 
 .duration
 {
   position: absolute;
   top: 70px;
-  left: 0%;
-  font-size: 14pt;
+  left: 5%;
+  font-size: 12pt;
 }
 
 .desc
 {
   position: absolute;
   top: 70px;
-  right: 0%;
-  font-size: 14pt;
+  right: 5%;
+  font-size: 12pt;
 }
 
 .workLogo
 {
-  color: white;
   position: absolute;
   top: 30px;
   left: 47%;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background: black;
+  background: #FFE4B5;
   border: 2px solid black;
   font-size: 30px;
   padding: 5px;

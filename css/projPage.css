@@ -4,7 +4,7 @@ Publications and projects page
 
 #myProjPage
 {
-  background-color: #009999;
+  background-color: #FFE4B5;
 }
 
 #publicationsContainer
@@ -15,7 +15,7 @@ Publications and projects page
   top: 0%;
   float: left;
   width: 40%;
-  background: #009999;
+  background: #FFE4B5;
   padding: 20px;
   text-align: center;
 }
@@ -53,7 +53,8 @@ Publications and projects page
   padding: 20px;
   font-size: 12pt;
   text-align: justify;
-  background: #dddddd;
+  background: white;
+  opacity: .8;
   color: black;
   border-radius: 5px;
 }
@@ -67,7 +68,8 @@ Publications and projects page
 {
   text-align: justify;
   margin-bottom: 25px;
-  background: #dddddd;
+  background: white;
+  opacity: .8;
   padding: 10px 15px;
   color: black;
   border-radius: 5px;
@@ -78,7 +80,7 @@ Publications and projects page
   text-align: justify;
   font-size: 14pt;
   font-weight: bold;
-  color: teal;
+  color: black;
 }
 
 #projectsContainer div.projDesc
@@ -97,7 +99,7 @@ Publications and projects page
 #projectsTable td:not(.midTile)
 {
   height: 100%;
-  border: 10px solid #009999;
+  border: 10px solid #FFE4B5;
   text-align: left;
   vertical-align: top;
   background: #dddddd;
@@ -113,7 +115,7 @@ p.projDuration
 #projectsTable td.midTile
 {
   word-wrap: break-word;
-  background: #009999;
+  background: #FFE4B5;
   font-size: 30pt;
   text-transform: uppercase;
   letter-spacing: 3pt;
@@ -123,7 +125,7 @@ p.projDuration
 }
 
 a.projLink {
-  color: teal;
+  color: black;
   text-decoration: underline;
 }
 
@@ -157,7 +159,7 @@ a.blockLink
   display: block;
   width: 70%;
   padding: 20px;
-  background: #009999;
+  background: #FFE4B5;
   border: 0px solid black;
   font-size: 15px;
   text-transform: uppercase;
@@ -172,7 +174,7 @@ a.blockLink:hover
 {
   cursor: pointer;
   text-decoration: none;
-  background: #007777;
+  background: #DDC293;
 }
 
 @media screen and (max-width: 768px)
@@ -197,7 +199,7 @@ a.blockLink:hover
     top: 0%;
     float: none;
     width: 100%;
-    background: #009999;
+    background: #FFE4B5;
     padding: 20px;
     text-align: center;
   }

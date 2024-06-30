@@ -4,9 +4,9 @@ Awards page
 
 #myAwardsPage
 {
-  background-color: #a5d175;
-  background-image: url('../img/greenbg.jpg');
-  background-attachment: fixed;
+  background-color: #4B1D13;
+  /* background-image: url('../img/greenbg.jpg'); */
+  /* background-attachment: fixed; */
 }
 
 #awardsText
@@ -14,6 +14,11 @@ Awards page
   position: relative;
   padding: 5px 50px;
   text-align: left;
+}
+
+#awardsText h1
+{
+  color: white;
 }
 
 #awardsInfo
