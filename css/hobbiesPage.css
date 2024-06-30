@@ -37,7 +37,7 @@ Hobbies
   top: 0%;
   left: 0%;
   display: inline-block;
-  width: 500px;
+  width: 25%;
   margin: 10px;
   padding: 20px;
   font-size: 12pt;
@@ -46,8 +46,8 @@ Hobbies
 
 .hobbyContainer img
 {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 50%;

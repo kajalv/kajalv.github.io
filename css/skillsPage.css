@@ -1,0 +1,52 @@
+/*
+Skills
+*/
+
+#mySkills
+{
+  background: #F0B38D;
+}
+
+#skillsText
+{
+  position: relative;
+  padding: 5px 50px;
+  text-align: center;
+}
+
+.listOfSkills
+{
+  margin-bottom: 50px;
+}
+
+.listOfSkills td
+{
+  padding: 10px 0px 10px 100px;
+  color: black;
+  font-size: 15pt;
+  max-width: 700px;
+}
+
+.listOfSkills i.fa-star
+{
+  color: black;
+  font-size: 15pt;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px)
+{
+  .listOfSkills td
+  {
+    padding: 20px;
+    font-size: 13pt;
+  }
+
+  #skillsText h1
+  {
+    font-size: 40px;
+    letter-spacing: 1pt;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}

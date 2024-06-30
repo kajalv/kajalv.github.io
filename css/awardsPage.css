@@ -1,5 +1,5 @@
 /*
-Awards and skills page
+Awards page
 */
 
 #myAwardsPage
@@ -9,7 +9,7 @@ Awards and skills page
   background-attachment: fixed;
 }
 
-#skillsText, #awardsText
+#awardsText
 {
   position: relative;
   padding: 5px 50px;
@@ -64,26 +64,6 @@ p.awarderInfo
   font-size: 11pt;
 }
 
-.listOfSkills
-{
-  margin-bottom: 50px;
-}
-
-.listOfSkills td
-{
-  padding: 10px 0px 10px 100px;
-  color: black;
-  font-size: 15pt;
-  max-width: 700px;
-}
-
-.listOfSkills i.fa-star
-{
-  color: black;
-  font-size: 15pt;
-  margin-right: 10px;
-}
-
 @media screen and (max-width: 1024px)
 {
   .awardBox
@@ -100,13 +80,7 @@ p.awarderInfo
     margin: 20px auto;
   }
 
-  .listOfSkills td
-  {
-    padding: 20px;
-    font-size: 13pt;
-  }
-
-  #awardsText h1, #skillsText h1
+  #awardsText h1
   {
     font-size: 40px;
     letter-spacing: 1pt;

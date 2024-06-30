@@ -23,6 +23,7 @@
     <link href="css/fullsite.css" rel="stylesheet">
     <link href="css/homePage.css" rel="stylesheet">
     <link href="css/educationPage.css" rel="stylesheet">
+    <link href="css/skillsPage.css" rel="stylesheet">
     <link href="css/projPage.css" rel="stylesheet">
     <link href="css/workPage.css" rel="stylesheet">
     <link href="css/awardsPage.css" rel="stylesheet">
@@ -36,16 +37,16 @@
       <!-- Front page text -->
       <div id="introContainer">
         <p class="introHeader">I'm Kajal Varma.</p>
-        <p class="subTitle">Software engineer. Student. Learner. Dreamer.</p>
+        <p class="subTitle">Software engineer, San Diego</p>
         <div id="aboutMe" align="right">
           <p>
-            I am a software engineer at Intuit working on performance, scalability, and reliability. Previously, I was a graduate student at Georgia Institute of Technology.
+            I am a software engineer at Intuit, San Diego, in the Site Reliability Engineering organization. I enjoy working across the stack, with a focus on cloud infrastructure and backend development. My area of focus is operational excellence.
           </p>
           <p>
-            I am interested in software development and computing systems, including operating systems, computer architecture, and networks.
+            Previously, I was a graduate student at Georgia Institute of Technology. I specialized in computing systems, including operating systems, computer architecture, and networks.
           </p>
           <p>
-            I also enjoy reading and creating art.
+            In my free time, I enjoy spending time with my cats, reading, and artwork.
           </p>
           <p>
             <center>
@@ -59,8 +60,6 @@
       <div id="contactContainer">
         <a href="mailto:kajalv.333@gmail.com" target="_blank"><img src="img/gmail.png" /></a>
         <a href="https://www.linkedin.com/in/kajal-varma/" target="_blank"><img src="img/linkedin.png" /></a>
-        <a href="https://github.com/kajalv" target="_blank"><img src="img/github.jpg" /></a>
-        <a href="https://backendtech.wordpress.com/" target="_blank"><img src="img/wordpress.png" /></a>
       </div>
     </div>
 
@@ -127,171 +126,27 @@
 
     </div>
 
-    <!-- Third page -->
-    <div id="myProjPage" align="left" class="notFullPageDiv">
-
-      <div id="publicationsContainer">
-        <h1 class="pageTitle">Publications</h1>
-        <h2>Predicting Execution Time of CUDA Kernel Using Static Analysis</h2>
-        <p class="pubInfo">Gargi Alavani, Kajal Varma, <a href="http://www.bits-pilani.ac.in/goa/santonus/profile" target="_blank">Santonu Sarkar</a></p>
-        <p class="pubInfo">ISPA 2018</p>
-        <div class="publicationDesc">
-          <p>GPU-based parallel applications are becoming complex and long-running which makes it energy inefficient. Anticipating execution time can help the developers to fix inefficient code before running it. We propose an approach to predict the execution time of a GPU kernel without the need of executing it. We build an analytical model to predict the execution time of a GPU kernel by analyzing the intermediate PTX code of a CUDA kernel.</p>
-
-          <center><a class="blockLink" href="http://ieeexplore.ieee.org/document/8672234/" target="_blank">View Publication</a></center>
-        </div>
-
-        <h2>DTLB: Deterministic TLB for Tightly Bound Hard Real-time Systems</h2>
-        <p class="pubInfo">Kajal Varma, <a href="http://www.bits-pilani.ac.in/goa/geetapatil/profile" target="_blank">Geeta Patil</a>, <a href="http://www.bits-pilani.ac.in/goa/biju/profile" target="_blank">Biju Raveendran</a></p>
-        <p class="pubInfo">VLSID 2017</p>
-        <div class="publicationDesc">
-          <p>This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per-access time. This is achieved by backing the TLB contents of the executing task to its PCB on preemption, and transferring the PCB contents back to the TLB when the task resumes execution. Experimental results carried out using MemSim, a single clock cycle simulator developed in Java with Swing GUI, show that the DTLB offers on an average 6.74% of dynamic energy savings over a conventional TLB model.</p>
-
-          <center><a class="blockLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Publication</a></center>
-        </div>
+    <!-- Section between two pages -->
+    <div id="mySkills" align="center" class="notFullPageDiv">
+      <div class="pageTitle" id="skillsText">
+        <h1>Skills</h1>
       </div>
 
-      <div id="projectsContainer">
-        <center><h1 class="pageTitle">Projects</h1></center>
-
-        <div class="projBox">
-          <center><h2 class="pageSubTitle">Independent Projects/Research</h2></center>
-          <p>
-            <div class="projTitle">Energy Estimation of High-Performance Computing Applications</div>
-            <div class="projDesc">Research thesis on prediction of energy consumption of an NVIDIA CUDA kernel through static analysis of compiled PTX code and power modelling of benchmarks on an NVIDIA GPU. Paper published in ISPA 2018.</div>
-          </p>
-          <p>
-            <div class="projTitle">DTLB: Deterministic TLB for Tightly Bound Hard Real-Time Systems</div>
-            <div class="projDesc">Deterministic translation lookaside buffer (DTLB) and cache design and simulation for hard real-time systems, to eliminate inter-task interference and obtain dynamic energy savings. Paper published in IEEE VLSID 2017.</div>
-          </p>
-          <p>
-            <div class="projTitle">Deterministic Process-Aware Partitioned Cache for Tightly Bound Hard Real-Time Systems</div>
-            <div class="projDesc">Worked on a research project in the area of real-time operating systems, proposing a cache memory design that eliminates inter-task interference.</div>
-          </p>
-          <p>
-            <div class="projTitle">Design of Scheduler and Memory for a Real-Time System</div>
-            <div class="projDesc">Implemented an Earliest Deadline First Scheduler with Stack Resource Policy (EDF-SRP) in C for process scheduling and memory management in a real-time operating system. Implemented MemSim, a memory simulator GUI in Java with a stack, TLB, and cache, to simulate the memory footprint of the schedule generated by EDF-SRP.</div>
-          </p>
-          <p>
-            <div class="projTitle">Mobile Edge Computing Packet Scheduling</div>
-            <div class="projDesc">Added support for simulation of Mobile Edge Computing (MEC) networks in NS-3 by implementing custom C++ modules. Added functionality to configure execution of several experiments in order to easily collect and plot data for research purposes.</div>
-          </p>
-        </div>
-
-        <div class="projBox">
-          <center><h2 class="pageSubTitle">Graduate Course Projects</h2></center>
-          <p>
-            <div class="projTitle">Analysis of Cache Replacement Policy using SESC Simulator</div>
-            <div class="projDesc">Implemented NXLRU (Next to Least Recently Used) cache replacement policy in the SuperESCalar Simulator. Gathered data on branch prediction accuracy and performance in an out-of-order processor. Classified misses as compulsory, conflict, capacity and coherence misses in the cache.</div>
-          </p>
-          <p>
-            <div class="projTitle">PromotEd</div>
-            <a class="projLink" href="https://promoted.herokuapp.com/">PromotEd - Webpage</a>
-            <div class="projDesc">Built a visual interface which recommends courses from multiple online course providers based on desired job roles. Used Python for machine learning algorithms, React, and shell scripts to collect data from MOOC APIs.</div>
-          </p>
-          <p>
-            <div class="projTitle">Pomodoro Time Tracker Web Application</div>
-            <div class="projDesc">Built the web application front-end for a time-tracker productivity application using React.</div>
-          </p>
-          <p>
-            <div class="projTitle">MapReduce Infrastructure using gRPC</div>
-            <div class="projDesc">Implemented a MapReduce simulation in C++ by using gRPC for communication in a distributed service.</div>
-          </p>
-          <p>
-            <div class="projTitle">vCPU Scheduler and Memory Coordinator for Virtual Machines</div>
-            <div class="projDesc">Implementation of a scheduler and memory coordinator to dynamically manage resources assigned to each guest OS running on a hypervisor in a virtualized setting in C.</div>
-          </p>
-          <p>
-            <div class="projTitle">Course Recommendation System</div>
-            <div class="projDesc">Built a course recommendation website for Georgia Tech using student reviews, performed sentiment analysis on the reviews. Compared user-based and item-based collaborative filtering, and content-based recommendation.</div>
-          </p>
-          <p>
-            <div class="projTitle">Simulation of Delay Tolerant Networks</div>
-            <div class="projDesc">Simulated a delay tolerant network using the ONE (Opportunistic Network Environment) simulator, and a TCP-network on NS-3 simulator.</div>
-          </p>
-        </div>
-
-        <div class="projBox">
-          <center><h2 class="pageSubTitle">Undergraduate Course Projects</h2></center>
-          <p>
-            <div class="projTitle">Raspberry Pi Surveillance Camera with Motion Detection and Android Application</div>
-            <div class="projDesc">Implemented motion detection, montage creation and email notifications with a Raspberry Pi and Pi Camera, which could be controlled through an Android application.</div>
-          </p>
-          <p>
-            <div class="projTitle">Linux Kernel Mouse Device Driver Implementation</div>
-            <div class="projDesc">Implementation of a kernel device driver module in C to change the brightness of the screen through mouse clicks.</div>
-          </p>
-          <p>
-            <div class="projTitle">Simulation of DiskSim disk scheduling algorithms</div>
-            <div class="projDesc">DiskSim is a hard disk simulation software used for I/O analysis research. Implemented a Java simulation of two scheduling algorithms - cyclic cylindrical access, and shortest access time first. Collected disk usage data of PC using IOMeter, an I/O subsystem measurement and characterization tool for single and clustered systems, as a study of disk performance.</div>
-          </p>
-          <p>
-            <div class="projTitle">Phased Cache Design and Implementation</div>
-            <div class="projDesc">Simulated an eight-way associative cache of 512B size and 16B line size using Verilog in ModelSim Altera. Implemented write back policy and FIFO replacement policy in the cache.</div>
-          </p>
-        </div>
-
-        <div class="projBox">
-          <center><h2 class="pageSubTitle">Hackathons</h2></center>
-          <p>
-            <div class="projTitle">TurboTax Sam</div>
-            <div class="projDesc">Worked in a team of four to develop a chatbot for HackUtsav 2017, an internal hackathon held at Intuit. The chatbot provides quick and easy answers to customers from within TurboTax Windows. Emerged the winners of the hackathon.</div>
-          </p>
-          <p>
-            <div class="projTitle">VoicePay</div>
-            <div class="projDesc">Worked in a team of two in the In24Hrs Hackathon held at Intuit. Built a prototype of an Android application that enables the visually impaired to manage their bills through voice.</div>
-          </p>
-        </div>
-
-
-        <!-- <table id="projectsTable">
+      <div id="skillsInfo">
+        <table class="listOfSkills">
           <tr>
-            <td id="ptd1">
-              <p class="projTitle">Energy Estimation of High Performance Computing Applications</p>
-              <p class="projDuration">January 2016 -<br />June 2016</p>
-            </td>
-            <td id="ptd2">
-              <p class="projTitle">Creation of Modified-EDF scheduler with Slack Stealing and Resource Blocking</p>
-              <p class="projDuration">August 2015 -<br />December 2015</p>
-            </td>
-            <td id="ptd3">
-              <p class="projTitle">Battleship Network Game Using Socket Programming</p>
-              <p class="projDuration">October 2015 -<br />November 2015</p>
-            </td>
+            <td><b>Programming Languages</b></td>
+            <td>Go (Golang), Python, C++, Java, JavaScript (React), C, bash</td>
           </tr>
           <tr>
-            <td id="ptd4">
-              <p class="projTitle">Raspberry Pi Surveillance Camera with Motion Detection and Android Application Interface</p>
-              <p class="projDuration">October 2015 -<br />November 2015</p>
-            </td>
-            <td id="ptd5" class="midTile">
-              Research and Projects
-            </td>
-            <td id="ptd6">
-              <p class="projTitle">Design of Scheduler and Memory for a Real-Time System</p>
-              <p class="projDuration">January 2015 -<br />May 2015</p>
-            </td>
+            <td><b>Tools and Technologies</b></td>
+            <td>Amazon Web Services (AWS), Kubernetes, Git, Terraform, Jenkins, Wavefront, HTML/CSS, Linux/UNIX</td>
           </tr>
-          <tr>
-            <td id="ptd7">
-              <p class="projTitle">Implementation of Custom Mouse Driver in Linux Kernel</p>
-              <p class="projDuration">March 2015 -<br />April 2015</p>
-            </td>
-            <td id="ptd8">
-              <p class="projTitle">Memory Management in Android and RTOSes</p>
-              <p class="projDuration">August 2014 -<br />December 2014</p>
-            </td>
-            <td id="ptd9">
-              <p class="projTitle">Phased Cache Design and Implementation</p>
-              <p class="projDuration">October 2014 -<br />November 2014</p>
-            </td>
-          </tr>
-        </table> -->
+        </table>
       </div>
-
     </div>
 
-    <!-- Fourth page -->
+    <!-- Third page -->
     <div id="myWorkPage" align="center" class="fullPageDiv">
       <div class="pageTitle" id="workExperienceText">
         <h1>Work Experience</h1>
@@ -301,9 +156,17 @@
 
         <div class="workExBox">
           <div class="workLogo"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+          <div class="role" align="right">Staff Software Engineer</div>
+          <div class="org" align="left">Intuit</div>
+          <div class="duration" align="right">February 2024 - Present</div>
+          <div class="desc" align="justify">Software engineer in the Performance, Reliability, and Optimization Engineering (Site Reliability Engineering) team.</div>
+        </div>
+
+        <div class="workExBox">
+          <div class="workLogo"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
           <div class="role" align="right">Senior Software Engineer</div>
           <div class="org" align="left">Intuit</div>
-          <div class="duration" align="right">August 2021 - Present</div>
+          <div class="duration" align="right">August 2021 - January 2024</div>
           <div class="desc" align="justify">Software engineer in the Performance, Reliability, and Optimization Engineering (Site Reliability Engineering) team.</div>
         </div>
 
@@ -399,6 +262,135 @@
       </div>
     </div>
 
+    <!-- Fourth page -->
+    <div id="myProjPage" align="left" class="notFullPageDiv">
+
+      <div id="publicationsContainer">
+        <h1 class="pageTitle">Publications</h1>
+        <h2>Predicting Execution Time of CUDA Kernel Using Static Analysis</h2>
+        <p class="pubInfo">Gargi Alavani, Kajal Varma, <a href="http://www.bits-pilani.ac.in/goa/santonus/profile" target="_blank">Santonu Sarkar</a></p>
+        <p class="pubInfo">ISPA 2018</p>
+        <div class="publicationDesc">
+          <p>GPU-based parallel applications are becoming complex and long-running which makes it energy inefficient. Anticipating execution time can help the developers to fix inefficient code before running it. We propose an approach to predict the execution time of a GPU kernel without the need of executing it. We build an analytical model to predict the execution time of a GPU kernel by analyzing the intermediate PTX code of a CUDA kernel.</p>
+
+          <center><a class="blockLink" href="http://ieeexplore.ieee.org/document/8672234/" target="_blank">View Publication</a></center>
+        </div>
+
+        <h2>DTLB: Deterministic TLB for Tightly Bound Hard Real-time Systems</h2>
+        <p class="pubInfo">Kajal Varma, <a href="http://www.bits-pilani.ac.in/goa/geetapatil/profile" target="_blank">Geeta Patil</a>, <a href="http://www.bits-pilani.ac.in/goa/biju/profile" target="_blank">Biju Raveendran</a></p>
+        <p class="pubInfo">VLSID 2017</p>
+        <div class="publicationDesc">
+          <p>This paper proposes a novel TLB architecture - Deterministic Translation Lookaside Buffer – to reduce TLB misses, energy consumption and effective per-access time. This is achieved by backing the TLB contents of the executing task to its PCB on preemption, and transferring the PCB contents back to the TLB when the task resumes execution. Experimental results carried out using MemSim, a single clock cycle simulator developed in Java with Swing GUI, show that the DTLB offers on an average 6.74% of dynamic energy savings over a conventional TLB model.</p>
+
+          <center><a class="blockLink" href="http://ieeexplore.ieee.org/document/7884780/" target="_blank">View Publication</a></center>
+        </div>
+      </div>
+
+      <div id="projectsContainer">
+        <center><h1 class="pageTitle">Projects</h1></center>
+
+        <div class="projBox">
+          <center><h2 class="pageSubTitle">Independent Projects/Research</h2></center>
+          <p>
+            <div class="projTitle">Energy Estimation of High-Performance Computing Applications</div>
+            <div class="projDesc">Research thesis on prediction of energy consumption of an NVIDIA CUDA kernel through static analysis of compiled PTX code and power modelling of benchmarks on an NVIDIA GPU. Paper published in ISPA 2018.</div>
+          </p>
+          <p>
+            <div class="projTitle">DTLB: Deterministic TLB for Tightly Bound Hard Real-Time Systems</div>
+            <div class="projDesc">Deterministic translation lookaside buffer (DTLB) and cache design and simulation for hard real-time systems, to eliminate inter-task interference and obtain dynamic energy savings. Paper published in IEEE VLSID 2017.</div>
+          </p>
+          <p>
+            <div class="projTitle">Deterministic Process-Aware Partitioned Cache for Tightly Bound Hard Real-Time Systems</div>
+            <div class="projDesc">Worked on a research project in the area of real-time operating systems, proposing a cache memory design that eliminates inter-task interference.</div>
+          </p>
+          <p>
+            <div class="projTitle">Design of Scheduler and Memory for a Real-Time System</div>
+            <div class="projDesc">Implemented an Earliest Deadline First Scheduler with Stack Resource Policy (EDF-SRP) in C for process scheduling and memory management in a real-time operating system. Implemented MemSim, a memory simulator GUI in Java with a stack, TLB, and cache, to simulate the memory footprint of the schedule generated by EDF-SRP.</div>
+          </p>
+          <p>
+            <div class="projTitle">Mobile Edge Computing Packet Scheduling</div>
+            <div class="projDesc">Added support for simulation of Mobile Edge Computing (MEC) networks in NS-3 by implementing custom C++ modules. Added functionality to configure execution of several experiments in order to easily collect and plot data for research purposes.</div>
+          </p>
+        </div>
+
+        <div class="projBox">
+          <center><h2 class="pageSubTitle">Graduate Course Projects</h2></center>
+          <p>
+            <div class="projTitle">PromotEd</div>
+            <a class="projLink" href="https://github.com/kajalv/promoted">GitHub</a>
+            <div class="projDesc">Built a visual interface which recommends courses from multiple online course providers based on desired job roles. Used Python for machine learning algorithms, React, and shell scripts to collect data from MOOC APIs.</div>
+          </p>
+          <p>
+            <div class="projTitle">Pomodoro Time Tracker Web Application</div>
+            <a class="projLink" href="https://github.com/kajalv/pomodoro-time-tracker-frontend">GitHub</a>
+            <div class="projDesc">Built the web application front-end for a time-tracker productivity application using React.</div>
+          </p>
+          <p>
+            <div class="projTitle">MapReduce Infrastructure using gRPC</div>
+            <div class="projDesc">Implemented a MapReduce simulation in C++ by using gRPC for communication in a distributed service.</div>
+          </p>
+          <p>
+            <div class="projTitle">vCPU Scheduler and Memory Coordinator for Virtual Machines</div>
+            <div class="projDesc">Implementation of a scheduler and memory coordinator to dynamically manage resources assigned to each guest OS running on a hypervisor in a virtualized setting in C.</div>
+          </p>
+          <p>
+            <div class="projTitle">Course Recommendation System</div>
+            <div class="projDesc">Built a course recommendation website for Georgia Tech using student reviews, performed sentiment analysis on the reviews. Compared user-based and item-based collaborative filtering, and content-based recommendation.</div>
+          </p>
+          <p>
+            <div class="projTitle">Simulation of Delay Tolerant Networks</div>
+            <div class="projDesc">Simulated a delay tolerant network using the ONE (Opportunistic Network Environment) simulator, and a TCP-network on NS-3 simulator.</div>
+          </p>
+          <p>
+            <div class="projTitle">Analysis of Cache Replacement Policy using SESC Simulator</div>
+            <div class="projDesc">Implemented NXLRU (Next to Least Recently Used) cache replacement policy in the SuperESCalar Simulator. Gathered data on branch prediction accuracy and performance in an out-of-order processor. Classified misses as compulsory, conflict, capacity and coherence misses in the cache.</div>
+          </p>
+        </div>
+
+        <div class="projBox">
+          <center><h2 class="pageSubTitle">Undergraduate Course Projects</h2></center>
+          <p>
+            <div class="projTitle">Raspberry Pi Surveillance Camera with Motion Detection and Android Application</div>
+            <a class="projLink" href="https://github.com/kajalv/raspberry-pi-camera">GitHub</a>
+            <div class="projDesc">Implemented motion detection, montage creation and email notifications with a Raspberry Pi and Pi Camera, which could be controlled through an Android application.</div>
+          </p>
+          <p>
+            <div class="projTitle">Linux Kernel Mouse Device Driver Implementation</div>
+            <a class="projLink" href="https://github.com/kajalv/mouse-driver">GitHub</a>
+            <div class="projDesc">Implementation of a kernel device driver module in C to change the brightness of the screen through mouse clicks.</div>
+          </p>
+          <p>
+            <div class="projTitle">Simulation of DiskSim disk scheduling algorithms</div>
+            <a class="projLink" href="https://github.com/kajalv/disksim-simulator">GitHub</a>
+            <div class="projDesc">DiskSim is a hard disk simulation software used for I/O analysis research. Implemented a Java simulation of two scheduling algorithms - cyclic cylindrical access, and shortest access time first. Collected disk usage data of PC using IOMeter, an I/O subsystem measurement and characterization tool for single and clustered systems, as a study of disk performance.</div>
+          </p>
+          <p>
+            <div class="projTitle">Phased Cache Design and Implementation</div>
+            <a class="projLink" href="https://github.com/kajalv/phased-cache">GitHub</a>
+            <div class="projDesc">Simulated an eight-way associative cache of 512B size and 16B line size using Verilog in ModelSim Altera. Implemented write back policy and FIFO replacement policy in the cache.</div>
+          </p>
+          <p>
+            <div class="projTitle">NVML GPU Power Management Module</div>
+            <a class="projLink" href="https://github.com/kajalv/nvml-power">GitHub</a>
+            <div class="projDesc">Built a module which helps to measure the average power level attained by an NVIDIA GPU during the execution of a CUDA kernel, especially useful for microbenchmarking instructions.</div>
+          </p>
+        </div>
+
+        <div class="projBox">
+          <center><h2 class="pageSubTitle">Hackathons</h2></center>
+          <p>
+            <div class="projTitle">TurboTax Sam</div>
+            <div class="projDesc">Worked in a team of four to develop a chatbot for HackUtsav 2017, an internal hackathon held at Intuit. The chatbot provides quick and easy answers to customers from within TurboTax Windows. Emerged the winners of the hackathon.</div>
+          </p>
+          <p>
+            <div class="projTitle">VoicePay</div>
+            <div class="projDesc">Worked in a team of two in the In24Hrs Hackathon held at Intuit. Built a prototype of an Android application that enables the visually impaired to manage their bills through voice.</div>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
     <!-- Fifth page -->
     <div id="myAwardsPage" align="center" class="fullPageDiv">
       <div class="pageTitle" id="awardsText">
@@ -406,6 +398,15 @@
       </div>
 
       <div id="awardsInfo">
+
+        <div class="awardBox" id="zero">
+          <i class="fa fa-trophy" aria-hidden="true"></i>
+          <p class="awardName">CG Excellence Award 2022</p>
+          <p class="awardDesc">
+            Engineering Excellence Award - 2022 for the Consumer Group at Intuit.
+          </p>
+          <p class="awarderInfo">Intuit, August 2022</p>
+        </div>
 
         <div class="awardBox" id="zero">
           <i class="fa fa-trophy" aria-hidden="true"></i>
@@ -423,15 +424,6 @@
             Engineering Excellence Award - 2018 for the Consumer Group at Intuit.
           </p>
           <p class="awarderInfo">Intuit India, April 2018</p>
-        </div>
-
-        <div class="awardBox" id="two">
-          <i class="fa fa-trophy" aria-hidden="true"></i>
-          <p class="awardName">Winner, Intuit HackUtsav 2017</p>
-          <p class="awardDesc">
-            Developed a chat bot, TurboTax Sam, as in-product help for TurboTax Windows.
-          </p>
-          <p class="awarderInfo">Intuit India, July 2017</p>
         </div>
 
         <div class="awardBox" id="three">
@@ -461,24 +453,6 @@
           <p class="awarderInfo">National Public School, January 2011</p>
         </div>
       </div>
-
-      <div class="pageTitle" id="skillsText">
-        <h1>Skills</h1>
-      </div>
-
-      <div id="skillsInfo">
-        <table class="listOfSkills">
-          <tr>
-            <td><b>Programming Languages</b></td>
-            <td>Go (Golang), Python, C++, Java, JavaScript (React), C, bash</td>
-          </tr>
-          <tr>
-            <td><b>Tools and Technologies</b></td>
-            <td>Amazon Web Services (AWS), Kubernetes, Git, Terraform, Jenkins, Wavefront, HTML/CSS, Linux/UNIX</td>
-          </tr>
-        </table>
-
-      </div>
     </div>
 
     <!-- Sixth page -->
@@ -489,9 +463,15 @@
 
       <div id="hobbiesInfo">
         <div class="hobbyContainer">
-          <p class="hobbyName">Art Gallery</p>
+          <p class="hobbyName">Cats</p>
+          <p class="hobbyDesc">Shadow & Cookie</p>
+          <img id="artimg" src="img/cats.jpg" />
+        </div>
+
+        <div class="hobbyContainer">
+          <p class="hobbyName">Art</p>
           <p class="hobbyDesc">Sketches | Paintings</p>
-          <a href="https://www.instagram.com/kajuvarma/" target="_blank"><img id="artimg" src="img/artimg.jpg" /></a>
+          <img id="artimg" src="img/artimg.jpg" />
         </div>
 
         <div class="hobbyContainer">
@@ -501,13 +481,13 @@
         </div>
 
         <div class="hobbyContainer">
-          <p class="hobbyName">Department of Creative Media</p>
+          <p class="hobbyName">Department of Creative Media, BITS Goa</p>
           <p class="hobbyDesc">Web Design | Web Development</p>
           <a href="https://www.facebook.com/DepartmentOfCreativeMedia/" target="_blank"><img id="dcmimg" src="img/dcm.png" /></a>
         </div>
 
         <div class="hobbyContainer">
-          <p class="hobbyName">Department of Photography</p>
+          <p class="hobbyName">Department of Photography, BITS Goa</p>
           <p class="hobbyDesc">Editing | Photoshop | Lightroom</p>
           <a href="https://www.facebook.com/DoPy.BITSGoa/" target="_blank"><img id="dopyimg" src="img/dopy.jpg" /></a>
         </div>
@@ -516,7 +496,7 @@
     </div>
 
     <div id="siteFooter">
-      Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 kajalv.com
+      Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2024 kajalv.com
       <center class="footerAction"><a class="navToTop" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a></center>
     </div>
 
