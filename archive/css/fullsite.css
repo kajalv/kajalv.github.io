@@ -1,0 +1,89 @@
+/*
+Full page
+*/
+
+/*
+Colors:
+Lime green: bee170
+Yellow matching dp: fde4b2
+*/
+
+*
+{
+  font-family: 'Open Sans', 'Josefin Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  background: #000000;
+}
+
+.fullPageDiv
+{
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.notFullPageDiv
+{
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+
+#siteFooter
+{
+  color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 10pt;
+}
+
+a.navToTop
+{
+  width: 10%;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px;
+  transition: opacity 1s;
+}
+
+a.navToTop i
+{
+  color: white;
+}
+
+a.navToTop:hover
+{
+  text-decoration: none;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.pageTitle h1, h1.pageTitle {
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
+  color: #000;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3pt;
+  z-index: 3;
+}
+
+.pageSubTitle h2, h2.pageSubTitle {
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+
+.footerAction {
+  margin-top: 10px;
+}

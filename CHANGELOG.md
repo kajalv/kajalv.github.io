@@ -40,6 +40,8 @@ The metaphor is used as an accent rather than a gimmick. Everything else is clea
 
 ## v3 — 2024 refresh
 
+[View the archived version →](https://kajalv.com/archive/)
+
 Content update after several years: new roles and awards, a new color scheme, and team name fixes.
 
 ## v2 — 2021 revamp

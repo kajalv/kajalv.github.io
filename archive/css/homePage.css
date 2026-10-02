@@ -1,0 +1,171 @@
+/*
+Home page
+*/
+
+#myHomePage
+{
+  background-color: #4B1E13;
+  background-image: url('../img/kajalvCircular.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+img.displayPic {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#introContainer
+{
+  position: relative;
+  width: 75%;
+  text-align: center;
+  height: auto;
+  padding: 7% 7% 20px 7%;
+  z-index: 2;
+}
+
+p.introHeader
+{
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-size: 70pt;
+}
+
+p.subTitle
+{
+  font-family: 'Montserrat', 'Josefin Sans', sans-serif;
+  color: #fff;
+  font-size: 15pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*
+Note to self - about me is not a part of the intro container div, because I need to set
+a different background colour. I also cannot just do it for the <p> tag because I have
+two paragraphs and need them both to be in the same block.
+*/
+#aboutMe
+{
+  background: #FFE4B5; /* similar shade: #E5AB89 */
+  color: black;
+  margin: 60px auto 30px auto;
+  padding: 20px;
+  font-size: 12pt;
+  text-align: justify;
+  opacity: .7;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+#aboutMe p
+{
+  font-family: 'Open Sans', 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+#contactContainer
+{
+  z-index: 3;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+
+#contactContainer img
+{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  opacity: .6;
+  box-shadow: 5px 5px 5px #000;
+  margin: 2% 5%;
+  transition: opacity 1s;
+}
+
+#contactContainer img:hover
+{
+  opacity: .9;
+}
+
+.leftImg
+{
+  margin-right: 50%;
+  text-align: left;
+}
+
+.rightImg
+{
+  margin-left: 50%;
+  text-align: right;
+}
+
+#resumeLink
+{
+  font-family: 'Open Sans', 'Josefin Sans', sans-serif;
+  width: 220px;
+  padding: 20px;
+  height: 60px;
+  background: #FFE4B5;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#resumeLink:hover
+{
+  cursor: pointer;
+  text-decoration: none;
+  background: #DDC293;
+}
+
+@media screen and (max-width: 768px)
+{
+  #myHomePage
+  {
+    background-size: 70%;
+  }
+
+  p.introHeader
+  {
+    font-size: 80px;
+  }
+
+  p.subTitle
+  {
+    font-size: 30px;
+  }
+
+  #introContainer
+  {
+    position: relative;
+    top: 0%;
+    float: none;
+    width: 100%;
+  }
+
+  #contactContainer img
+  {
+    height: 40px;
+    width: 40px;
+  }
+
+  .leftImg
+  {
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .rightImg
+  {
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: left;
+  }
+}
