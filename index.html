@@ -14,10 +14,10 @@
     <meta property="og:url" content="https://kajalv.com/">
     <meta property="og:image" content="https://kajalv.com/img/portrait.jpg">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=2">
+    <link rel="manifest" href="favicon/site.webmanifest?v=2">
 
     <!-- Apply the saved theme before first paint to avoid a flash -->
     <script>
@@ -30,7 +30,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Mona+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
   </head>
   <body>
@@ -42,10 +42,10 @@
         <nav id="site-nav" class="site-nav" aria-label="Primary">
           <ul>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#life">Life</a></li>
+            <li><a href="#life">Downtime</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -61,36 +61,55 @@
     </header>
 
     <main id="main">
-      <!-- Hero -->
-      <section id="top" class="hero wrap">
-        <div class="hero-copy">
+      <!-- Intro -->
+      <section id="top" class="intro wrap">
+        <div class="intro-copy">
           <p class="status">
             <span class="status-dot" aria-hidden="true"></span>
             <span>All systems operational</span>
             <span class="status-sep" aria-hidden="true">/</span>
             <span>San Diego <time class="clock" data-tz="America/Los_Angeles"></time></span>
           </p>
-          <h1 class="hero-name">Kajal<br>Varma</h1>
-          <p class="hero-role">
+          <h1 class="intro-name">Kajal<br>Varma</h1>
+          <p class="intro-role">
             Staff Software Engineer at Intuit, working on
             <strong>systems &amp; reliability engineering</strong> for the Consumer Group.
           </p>
-          <p class="hero-bio">
+          <p class="intro-bio">
             I enjoy working across the stack, with a focus on cloud infrastructure and backend
-            development. My area of focus is operational excellence: the unglamorous work that keeps
-            systems up. Before Intuit San Diego, I studied computing systems at Georgia Tech.
+            development. My area of focus is operational excellence. Before Intuit San Diego, I did
+            my master’s at Georgia Tech, specializing in computing systems.
           </p>
-          <ul class="hero-links">
-            <li><a class="btn btn-solid" href="https://drive.google.com/file/d/1Ne-Tim5ZboahkFDjpN0FVvNGWMXe1pSI/view?usp=sharing" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a></li>
-            <li><a class="btn" href="mailto:kajalv.333@gmail.com">Email</a></li>
-            <li><a class="btn" href="https://www.linkedin.com/in/kajal-varma/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a class="btn" href="https://github.com/kajalv" target="_blank" rel="noopener">GitHub</a></li>
+          <ul class="intro-links">
+            <li>
+              <a class="btn btn-solid btn-resume" href="https://drive.google.com/file/d/1Ne-Tim5ZboahkFDjpN0FVvNGWMXe1pSI/view?usp=sharing" target="_blank" rel="noopener">
+                <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2.5h8l4 4v15H6z"/><path d="M14 2.5v4h4M9 12h6M9 15.5h6M9 19h3.5"/></svg></span>
+                <span class="btn-text"><span>Résumé</span><span aria-hidden="true">open pdf ↗</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-email" href="mailto:kajalv.333@gmail.com">
+                <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path class="flap" d="M3.5 6.5 12 13l8.5-6.5"/></svg></span>
+                <span class="btn-text"><span>Email</span><span aria-hidden="true">say hi!</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-linkedin" href="https://www.linkedin.com/in/kajal-varma/" target="_blank" rel="noopener">
+                <span class="btn-icon" aria-hidden="true"><svg class="solid" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v6.35h-4V15.2c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.65H9.5v-11Z"/></svg></span>
+                <span class="btn-text"><span>LinkedIn</span><span aria-hidden="true">kajal-varma</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-github" href="https://github.com/kajalv" target="_blank" rel="noopener">
+                <span class="btn-icon" aria-hidden="true"><svg class="solid" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-1.96c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></span>
+                <span class="btn-text"><span>GitHub</span><span aria-hidden="true">@kajalv</span></span>
+              </a>
+            </li>
           </ul>
         </div>
 
-        <figure class="hero-portrait">
+        <figure class="intro-portrait">
           <img src="img/portrait.jpg" alt="Portrait of Kajal Varma" width="723" height="900" fetchpriority="high">
-          <figcaption><span>kajal.jpg</span><span>uptime ∞</span></figcaption>
         </figure>
       </section>
 
@@ -101,13 +120,13 @@
           <ul class="uptime-legend mono-label" aria-hidden="true">
             <li><i class="sw sw-work"></i>Work</li>
             <li><i class="sw sw-study"></i>Study</li>
-            <li><i class="sw sw-teach"></i>Teaching</li>
+            <li><i class="sw sw-teach"></i>Assistantships</li>
           </ul>
         </div>
         <div class="uptime-chart" id="uptime-chart" role="img"
-             aria-label="Timeline from 2012 to today: studied at BITS Pilani 2012 to 2016 and Georgia Tech 2018 to 2019; worked at Intuit from 2016 onward, plus internships and teaching assistantships.">
+             aria-label="Timeline from 2012 to today: studied at BITS Pilani 2012 to 2016 and Georgia Tech 2018 to 2019; systems and reliability engineering at Intuit from 2020 onward, after earlier product engineering roles and teaching assistantships.">
         </div>
-        <p class="uptime-readout mono-label" id="uptime-readout" aria-hidden="true">Hover a segment</p>
+        <p class="uptime-readout mono-label" id="uptime-readout" aria-hidden="true"></p>
       </section>
 
       <!-- Experience -->
@@ -121,219 +140,115 @@
           <article class="org reveal">
             <div class="org-head">
               <h3>Intuit</h3>
-              <p class="mono-label">2015 — present · San Diego, previously Bangalore</p>
+              <p class="mono-label">Systems &amp; reliability since 2020 · San Diego</p>
             </div>
             <ol class="roles">
               <li class="role is-current">
                 <time>Feb 2024 — now</time>
-                <div><strong>Staff Software Engineer</strong><span>Systems &amp; Reliability Engineering, Consumer Group</span></div>
+                <div>
+                  <strong>Staff Software Engineer</strong><span>Systems &amp; Reliability Engineering, Consumer Group</span>
+                  <ul class="log">
+                    <li>Lead the development and rollout of continuous monitoring and self-remediation that recovers Intuit offerings from regional outages automatically.</li>
+                    <li>Deliver reliable real-time data to a high-visibility dashboard tracking TurboTax’s key business metrics.</li>
+                    <li>Scale critical backend services ahead of planned traffic surges.</li>
+                    <li>Run failure mode and effects analysis (FMEA) to harden the TurboTax tech ecosystem.</li>
+                  </ul>
+                </div>
               </li>
               <li class="role">
                 <time>Aug 2021 — Jan 2024</time>
-                <div><strong>Senior Software Engineer</strong><span>Systems &amp; Reliability Engineering, Consumer Group</span></div>
+                <div>
+                  <strong>Senior Software Engineer</strong>
+                  <ul class="log">
+                    <li>Designed and built a continuous monitoring and self-remediation framework that automatically recovers services from regional outages.</li>
+                  </ul>
+                </div>
               </li>
               <li class="role">
                 <time>Jan 2020 — Jul 2021</time>
-                <div><strong>Software Engineer 2</strong><span>Systems &amp; Reliability Engineering, Consumer Group</span></div>
-              </li>
-              <li class="role">
-                <time>May — Aug 2019</time>
-                <div><strong>Software Engineer Intern</strong><span>Core Tax Services backend, Consumer Group</span></div>
-              </li>
-              <li class="role">
-                <time>Feb — Aug 2018</time>
-                <div><strong>Software Engineer 2</strong><span>TurboTax Desktop, Consumer Tax Group · Intuit India</span></div>
-              </li>
-              <li class="role">
-                <time>Aug 2016 — Jan 2018</time>
-                <div><strong>Software Engineer 1</strong><span>TurboTax Desktop, Consumer Tax Group · Intuit India</span></div>
-              </li>
-              <li class="role">
-                <time>May — Jul 2015</time>
-                <div><strong>Software Engineer Intern</strong><span>TurboTax Android, Consumer Tax Group · Intuit India</span></div>
+                <div>
+                  <strong>Software Engineer 2</strong>
+                  <ul class="log">
+                    <li>Built a traffic-dialing and fleet-management tool that lets product teams safely manage their services.</li>
+                    <li>Standardized how backend services publish monitoring metrics, adopted company-wide.</li>
+                    <li>Cut user-perceived page load times by <span class="stat">7%</span> with location-based routing in a session-management service (Java, Kotlin).</li>
+                    <li>Introduced hybrid EC2 autoscaling that balances scalability and cost.</li>
+                  </ul>
+                </div>
               </li>
             </ol>
+            <details class="earlier">
+              <summary>Earlier at Intuit · 2016 — 2019</summary>
+              <ol class="roles">
+                <li class="role">
+                  <time>May — Aug 2019</time>
+                  <div>
+                    <strong>Software Engineer Intern</strong><span>Core Tax Services backend, Consumer Group</span>
+                    <ul class="log">
+                      <li>Cut test runs from <span class="stat">~15</span> to <span class="stat">~3–4&nbsp;min</span> across five services with record-and-replay integration tests (WireMock), eliminating flaky builds.</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="role">
+                  <time>Aug 2016 — Aug 2018</time>
+                  <div>
+                    <strong>Software Engineer 1 → 2</strong><span>TurboTax Desktop · Intuit India, Bangalore. Joined full-time after a TurboTax Android internship.</span>
+                    <ul class="log">
+                      <li>Integrated a new tech stack into TurboTax Desktop for Windows and Mac, replacing legacy frameworks. Earned an Engineering Excellence Award for its rollout to half a million users.</li>
+                    </ul>
+                  </div>
+                </li>
+              </ol>
+            </details>
           </article>
 
-          <article class="org reveal">
+          <article class="org org-minor reveal">
             <div class="org-head">
-              <h3>Georgia Tech</h3>
-              <p class="mono-label">2019 · Atlanta</p>
+              <h3>Assistantships</h3>
+              <p class="mono-label">Grad &amp; undergrad</p>
             </div>
             <ol class="roles">
               <li class="role">
                 <time>Jan — Dec 2019</time>
-                <div><strong>Graduate Teaching Assistant</strong><span>CS 6262 Network Security, taught by Dr. Wenke Lee. Two semesters.</span></div>
-              </li>
-            </ol>
-          </article>
-
-          <article class="org reveal">
-            <div class="org-head">
-              <h3>BITS Pilani, Goa</h3>
-              <p class="mono-label">2015 · Goa</p>
-            </div>
-            <ol class="roles">
-              <li class="role">
-                <time>Aug — Dec 2015</time>
-                <div><strong>Teaching Assistant</strong><span>Computer Architecture</span></div>
+                <div><strong>Graduate Teaching Assistant</strong><span>Georgia Tech · CS 6262 Network Security with Dr. Wenke Lee</span></div>
               </li>
               <li class="role">
-                <time>Jan — May 2015</time>
-                <div><strong>Professional Assistant</strong><span>Computer Programming</span></div>
+                <time>Final year</time>
+                <div><strong>Teaching Assistant</strong><span>BITS Pilani, Goa · Computer Architecture</span></div>
               </li>
-            </ol>
-          </article>
-
-          <article class="org reveal">
-            <div class="org-head">
-              <h3>RailTel Corporation of India</h3>
-              <p class="mono-label">2014</p>
-            </div>
-            <ol class="roles">
               <li class="role">
-                <time>May — Jul 2014</time>
-                <div><strong>Intern</strong><span>Summer internship through BITS Pilani’s Practice School-I programme</span></div>
+                <time>Third year</time>
+                <div><strong>Professional Assistant</strong><span>BITS Pilani, Goa · Computer Programming</span></div>
               </li>
             </ol>
           </article>
 
           <div class="stack reveal">
-            <h3 class="mono-label">Stack</h3>
-            <dl>
-              <div>
-                <dt>Languages</dt>
-                <dd>Go · Python · C++ · Java · JavaScript (React) · C · bash</dd>
-              </div>
-              <div>
-                <dt>Infra &amp; tools</dt>
-                <dd>AWS · Kubernetes · Terraform · Jenkins · Wavefront · Git · Linux/UNIX · HTML/CSS</dd>
-              </div>
+            <p class="stack-tab mono-label">stack.yml</p>
+            <dl class="stack-file">
+              <div><dt>languages</dt><dd><span>Go</span><span>Python</span><span>C++</span><span>JavaScript</span><span>C</span><span>Bash</span></dd></div>
+              <div><dt>frontend</dt><dd><span>React</span><span>HTML/CSS</span></dd></div>
+              <div><dt>infra</dt><dd><span>AWS</span><span>Kubernetes</span><span>Terraform</span></dd></div>
+              <div><dt>ci_cd</dt><dd><span>Jenkins</span><span>Git</span></dd></div>
+              <div><dt>observability</dt><dd><span>Wavefront</span><span>Splunk</span></dd></div>
+              <div><dt>os</dt><dd><span>Linux/UNIX</span></dd></div>
             </dl>
+
+            <!-- js/site.js marks a cert Active while data-expires is in the future -->
+            <h3 class="mono-label stack-sub">Certifications</h3>
+            <ul class="certs">
+              <li data-earned="2020-03" data-expires="2029-09"><span>AWS Certified Cloud Practitioner</span><span class="cert-status">Earned 2020</span></li>
+              <li data-earned="2020-10" data-expires="2026-10"><span>AWS Certified Developer – Associate</span><span class="cert-status">Earned 2020</span></li>
+              <li data-earned="2022-12" data-expires="2025-12"><span>CKAD: Certified Kubernetes Application Developer</span><span class="cert-status">Earned 2022</span></li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects" class="section wrap">
-        <header class="section-label">
-          <p class="mono-label">02</p>
-          <h2>Projects</h2>
-          <p class="section-note">Things I built in grad school, undergrad, and at hackathons.</p>
-        </header>
-
-        <div class="section-body">
-          <div class="filters" role="group" aria-label="Filter projects">
-            <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" class="filter" data-filter="systems" aria-pressed="false">Systems</button>
-            <button type="button" class="filter" data-filter="hardware" aria-pressed="false">Hardware</button>
-            <button type="button" class="filter" data-filter="web" aria-pressed="false">Web &amp; ML</button>
-            <button type="button" class="filter" data-filter="research" aria-pressed="false">Research</button>
-            <button type="button" class="filter" data-filter="hackathon" aria-pressed="false">Hackathons</button>
-            <span class="filter-count mono-label" aria-live="polite"></span>
-          </div>
-
-          <ul class="projects">
-            <li class="project" data-tags="web">
-              <p class="project-meta mono-label"><span>Grad</span><span>Python · React</span></p>
-              <h3>PromotEd</h3>
-              <p>A visual interface that recommends courses from multiple online providers based on the job role you want. Machine learning in Python, shell scripts to pull data from MOOC APIs.</p>
-              <a class="project-link" href="https://github.com/kajalv/promoted" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="systems">
-              <p class="project-meta mono-label"><span>Grad</span><span>C++ · gRPC</span></p>
-              <h3>MapReduce over gRPC</h3>
-              <p>A MapReduce simulation in C++, using gRPC for communication between workers in a distributed service.</p>
-            </li>
-            <li class="project" data-tags="systems">
-              <p class="project-meta mono-label"><span>Grad</span><span>C · Hypervisor</span></p>
-              <h3>vCPU scheduler &amp; memory coordinator</h3>
-              <p>Dynamically manages the resources assigned to each guest OS running on a hypervisor in a virtualized setting.</p>
-            </li>
-            <li class="project" data-tags="hardware systems">
-              <p class="project-meta mono-label"><span>Undergrad</span><span>Pi · Android</span></p>
-              <h3>Raspberry Pi surveillance camera</h3>
-              <p>Motion detection, montage creation, and email notifications with a Pi Camera, controlled from an Android app.</p>
-              <a class="project-link" href="https://github.com/kajalv/raspberry-pi-camera" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="systems">
-              <p class="project-meta mono-label"><span>Undergrad</span><span>C · Linux kernel</span></p>
-              <h3>Mouse device driver</h3>
-              <p>A Linux kernel module that changes screen brightness through mouse clicks.</p>
-              <a class="project-link" href="https://github.com/kajalv/mouse-driver" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="web">
-              <p class="project-meta mono-label"><span>Grad</span><span>React</span></p>
-              <h3>Pomodoro time tracker</h3>
-              <p>The web front end for a time-tracking productivity application.</p>
-              <a class="project-link" href="https://github.com/kajalv/pomodoro-time-tracker-frontend" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="web">
-              <p class="project-meta mono-label"><span>Grad</span><span>ML · NLP</span></p>
-              <h3>Course recommendation system</h3>
-              <p>Course recommendations for Georgia Tech from student reviews, with sentiment analysis. Compared user-based, item-based, and content-based filtering.</p>
-            </li>
-            <li class="project" data-tags="hardware">
-              <p class="project-meta mono-label"><span>Grad</span><span>SESC</span></p>
-              <h3>Cache replacement analysis</h3>
-              <p>Implemented NXLRU replacement in the SuperESCalar simulator. Measured branch prediction in an out-of-order core and classified cache misses as compulsory, conflict, capacity, or coherence.</p>
-            </li>
-            <li class="project" data-tags="systems">
-              <p class="project-meta mono-label"><span>Grad</span><span>ONE · NS-3</span></p>
-              <h3>Delay tolerant networks</h3>
-              <p>Simulated a delay tolerant network with the Opportunistic Network Environment simulator, and a TCP network on NS-3.</p>
-            </li>
-            <li class="project" data-tags="research systems">
-              <p class="project-meta mono-label"><span>Research</span><span>C++ · NS-3</span></p>
-              <h3>Mobile edge computing packet scheduling</h3>
-              <p>Custom NS-3 modules to simulate MEC networks, plus tooling to configure experiment runs and plot the results.</p>
-            </li>
-            <li class="project" data-tags="research hardware">
-              <p class="project-meta mono-label"><span>Research</span><span>C · Java</span></p>
-              <h3>EDF-SRP scheduler &amp; MemSim</h3>
-              <p>An Earliest Deadline First scheduler with Stack Resource Policy for a real-time OS, and MemSim, a Java GUI simulating stack, TLB, and cache for the generated schedule.</p>
-            </li>
-            <li class="project" data-tags="research hardware">
-              <p class="project-meta mono-label"><span>Research</span><span>Real-time</span></p>
-              <h3>Process-aware partitioned cache</h3>
-              <p>A cache memory design for tightly bound hard real-time systems that eliminates inter-task interference.</p>
-            </li>
-            <li class="project" data-tags="hardware">
-              <p class="project-meta mono-label"><span>Undergrad</span><span>CUDA · NVML</span></p>
-              <h3>GPU power measurement</h3>
-              <p>Measures the average power an NVIDIA GPU draws while running a CUDA kernel. Useful for microbenchmarking instructions.</p>
-              <a class="project-link" href="https://github.com/kajalv/nvml-power" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="hardware">
-              <p class="project-meta mono-label"><span>Undergrad</span><span>Verilog</span></p>
-              <h3>Phased cache</h3>
-              <p>An 8-way associative, 512B cache with 16B lines in ModelSim Altera, with write-back and FIFO replacement.</p>
-              <a class="project-link" href="https://github.com/kajalv/phased-cache" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="systems">
-              <p class="project-meta mono-label"><span>Undergrad</span><span>Java · IOMeter</span></p>
-              <h3>DiskSim scheduling</h3>
-              <p>Java simulations of cyclic cylindrical access and shortest-access-time-first disk scheduling, along with a study of real disk usage measured with IOMeter.</p>
-              <a class="project-link" href="https://github.com/kajalv/disksim-simulator" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="project" data-tags="hackathon">
-              <p class="project-meta mono-label"><span>HackUtsav 2017</span><span class="win">Winner</span></p>
-              <h3>TurboTax Sam</h3>
-              <p>A chatbot giving customers quick answers from inside TurboTax Windows. Built by a team of four at Intuit’s internal hackathon.</p>
-            </li>
-            <li class="project" data-tags="hackathon">
-              <p class="project-meta mono-label"><span>In24Hrs</span><span>Android</span></p>
-              <h3>VoicePay</h3>
-              <p>A prototype Android app that lets visually impaired users manage their bills by voice. Built by a team of two.</p>
-            </li>
-          </ul>
         </div>
       </section>
 
       <!-- Research -->
       <section id="research" class="section wrap">
         <header class="section-label">
-          <p class="mono-label">03</p>
+          <p class="mono-label">02</p>
           <h2>Research</h2>
         </header>
 
@@ -343,7 +258,7 @@
               <p class="mono-label pub-venue">ISPA 2018 · IEEE</p>
               <h3><a href="http://ieeexplore.ieee.org/document/8672234/" target="_blank" rel="noopener">Predicting Execution Time of CUDA Kernel Using Static Analysis <span aria-hidden="true">↗</span></a></h3>
               <p class="pub-authors">Gargi Alavani, <b>Kajal Varma</b>, Santonu Sarkar</p>
-              <p>An analytical model that predicts a GPU kernel’s execution time from its intermediate PTX code without running it, so developers can fix inefficient, energy-hungry code early.</p>
+              <p>An analytical model that predicts a GPU kernel’s execution time from its intermediate PTX code without running it, so developers can fix inefficient code before running it.</p>
             </li>
             <li class="pub reveal">
               <p class="mono-label pub-venue">VLSID 2017 · IEEE</p>
@@ -355,6 +270,72 @@
         </div>
       </section>
 
+      <!-- Projects -->
+      <section id="projects" class="section wrap">
+        <header class="section-label">
+          <p class="mono-label">03</p>
+          <h2>Projects</h2>
+          <p class="section-note">A few things I built in grad school and undergrad.</p>
+        </header>
+
+        <div class="section-body">
+
+          <ul class="projects">
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Grad</span><span>C++ · gRPC</span></p>
+              <h3>MapReduce over gRPC</h3>
+              <p>A MapReduce simulation in C++, using gRPC for communication between workers in a distributed service.</p>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Grad</span><span>C · Hypervisor</span></p>
+              <h3>vCPU scheduler &amp; memory coordinator</h3>
+              <p>Dynamically manages the resources assigned to each guest OS running on a hypervisor in a virtualized setting.</p>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Grad</span><span>Python · React</span></p>
+              <h3>PromotEd</h3>
+              <p>A visual interface that recommends courses from multiple online providers based on the job role you want. Machine learning in Python, shell scripts to pull data from MOOC APIs.</p>
+              <a class="project-link" href="https://github.com/kajalv/promoted" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Research</span><span>C · Real-time OS</span></p>
+              <h3>EDF-SRP scheduler</h3>
+              <p>An Earliest Deadline First scheduler with Stack Resource Policy, written in C for process scheduling in a real-time operating system.</p>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Undergrad</span><span>Java · IOMeter</span></p>
+              <h3>DiskSim scheduling</h3>
+              <p>Java simulations of cyclic cylindrical access and shortest-access-time-first disk scheduling, along with a study of real disk usage measured with IOMeter.</p>
+              <a class="project-link" href="https://github.com/kajalv/disksim-simulator" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Undergrad</span><span>C · Linux kernel</span></p>
+              <h3>Mouse device driver</h3>
+              <p>A Linux kernel module that changes screen brightness through mouse clicks.</p>
+              <a class="project-link" href="https://github.com/kajalv/mouse-driver" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Undergrad</span><span>CUDA · NVML</span></p>
+              <h3>GPU power measurement</h3>
+              <p>Measures the average power an NVIDIA GPU draws while running a CUDA kernel. Useful for microbenchmarking instructions.</p>
+              <a class="project-link" href="https://github.com/kajalv/nvml-power" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Undergrad</span><span>Verilog</span></p>
+              <h3>Phased cache</h3>
+              <p>An 8-way associative, 512B cache with 16B lines in ModelSim Altera, with write-back and FIFO replacement.</p>
+              <a class="project-link" href="https://github.com/kajalv/phased-cache" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="project reveal">
+              <p class="project-meta mono-label"><span>Undergrad</span><span>Pi · Android</span></p>
+              <h3>Raspberry Pi surveillance camera</h3>
+              <p>Motion detection, montage creation, and email notifications with a Pi Camera, controlled from an Android app.</p>
+              <a class="project-link" href="https://github.com/kajalv/raspberry-pi-camera" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Education & awards -->
       <section id="education" class="section wrap">
         <header class="section-label">
@@ -363,49 +344,48 @@
         </header>
 
         <div class="section-body">
-          <div class="edu">
-            <article class="edu-item reveal">
-              <p class="mono-label">Aug 2018 — Dec 2019</p>
-              <h3>Georgia Institute of Technology</h3>
-              <p>M.S. Computer Science, specializing in Computing Systems</p>
-              <p class="edu-score"><span class="stat">4.0</span> / 4.0 GPA</p>
-              <details>
-                <summary>Coursework</summary>
-                <ul class="tags">
-                  <li>Advanced Operating Systems</li><li>High Performance Computer Architecture</li><li>Computer Networks</li><li>Network Security</li><li>Big Data Systems &amp; Analytics</li><li>Information Security</li><li>Advanced Software Engineering</li><li>Data &amp; Visual Analytics</li><li>Graduate Algorithms</li><li>Special Problem (research)</li>
-                </ul>
-              </details>
-            </article>
-            <article class="edu-item reveal">
-              <p class="mono-label">Aug 2012 — Jul 2016</p>
-              <h3>BITS Pilani, K. K. Birla Goa Campus</h3>
-              <p>B.E. (Hons.) Computer Science</p>
-              <p class="edu-score"><span class="stat">8.64</span> / 10 CGPA</p>
-              <details>
-                <summary>Coursework</summary>
-                <ul class="tags">
-                  <li>Operating Systems</li><li>Computer Architecture</li><li>Data Storage Technologies &amp; Networks</li><li>Data Structures &amp; Algorithms</li><li>Database Systems</li>
-                </ul>
-              </details>
-            </article>
-            <article class="edu-item reveal">
-              <p class="mono-label">1998 — 2012</p>
-              <h3>National Public School, Indiranagar</h3>
-              <p>CBSE</p>
-              <p class="edu-score">Grade XII <span class="stat">97.6%</span> · Grade X CGPA <span class="stat">10.0</span>, 99.9946 percentile</p>
-            </article>
-          </div>
+          <ol class="roles edu">
+            <li class="role reveal">
+              <time>Aug 2018 — Dec 2019</time>
+              <div><strong>Georgia Institute of Technology</strong><span>M.S. Computer Science, Computing Systems</span></div>
+              <p class="edu-score"><b>4.0</b> / 4.0 GPA</p>
+                <div class="edu-courses">
+                  <p class="mono-label">Coursework</p>
+                  <ul><li>Advanced Operating Systems</li><li>High Performance Computer Architecture</li><li>Computer Networks</li><li>Network Security</li><li>Big Data Systems &amp; Analytics</li><li>Information Security</li><li>Advanced Software Engineering</li><li>Data &amp; Visual Analytics</li><li>Graduate Algorithms</li><li>Special Problem (research)</li></ul>
+                </div>
+            </li>
+            <li class="role reveal">
+              <time>Aug 2012 — Jul 2016</time>
+              <div><strong>BITS Pilani, K. K. Birla Goa Campus</strong><span>B.E. (Hons.) Computer Science</span></div>
+              <p class="edu-score"><b>8.64</b> / 10 CGPA</p>
+                <div class="edu-courses">
+                  <p class="mono-label">Coursework</p>
+                  <ul><li>Operating Systems</li><li>Computer Architecture</li><li>Data Storage Technologies &amp; Networks</li><li>Data Structures &amp; Algorithms</li><li>Database Systems</li></ul>
+                </div>
+            </li>
+            <li class="role reveal">
+              <time>1998 — 2012</time>
+              <div><strong>National Public School, Indiranagar</strong><span>CBSE · Class X CGPA 10.0, 99.9946 percentile</span></div>
+              <p class="edu-score"><b>97.6%</b> Class XII</p>
+            </li>
+          </ol>
 
           <div class="awards reveal">
             <h3 class="mono-label">Awards</h3>
             <ul>
               <li><time>2022</time><span>CG Engineering Excellence Award</span><em>Intuit</em></li>
               <li><time>2021</time><span>CG Engineering Excellence Award</span><em>Intuit</em></li>
-              <li><time>2018</time><span>CG Engineering Excellence Award</span><em>Intuit India</em></li>
-              <li><time>2012</time><span>National Cyber Olympiad: All-India Rank 17, Karnataka Rank 1</span><em>Science Olympiad Foundation</em></li>
-              <li><time>2012</time><span>CBSE Science Scholarship, top 1% nationally in Class XII</span><em>CBSE</em></li>
-              <li><time>2011</time><span>Mridula Scholarship, school topper in Grade X</span><em>National Public School</em></li>
             </ul>
+            <details class="earlier">
+              <summary>Earlier · 2011 — 2018</summary>
+              <ul>
+                <li><time>2018</time><span>CG Engineering Excellence Award</span><em>Intuit India</em></li>
+                <li><time>2016</time><span>GRE 338 / 340 · TOEFL 118 / 120</span><em>Grad school admissions</em></li>
+                <li><time>2012</time><span>National Cyber Olympiad: All-India Rank 17, Karnataka Rank 1</span><em>Science Olympiad Foundation</em></li>
+                <li><time>2012</time><span>CBSE Science Scholarship, top 1% nationally in Class XII</span><em>CBSE</em></li>
+                <li><time>2011</time><span>Mridula Scholarship, school topper in Grade X</span><em>National Public School</em></li>
+              </ul>
+            </details>
           </div>
         </div>
       </section>
@@ -414,7 +394,7 @@
       <section id="life" class="section wrap">
         <header class="section-label">
           <p class="mono-label">05</p>
-          <h2>Off hours</h2>
+          <h2>Downtime</h2>
           <p class="section-note">Cats, books, and making things by hand.</p>
         </header>
 
@@ -447,7 +427,7 @@
 
     <footer id="contact" class="site-footer">
       <div class="wrap">
-        <p class="mono-label">Say hello</p>
+        <p class="mono-label">Contact</p>
         <a class="footer-email" href="mailto:kajalv.333@gmail.com">kajalv.333@gmail.com</a>
         <div class="footer-row">
           <ul class="footer-links">
@@ -455,7 +435,7 @@
             <li><a href="https://github.com/kajalv" target="_blank" rel="noopener">GitHub</a></li>
             <li><a href="https://drive.google.com/file/d/1Ne-Tim5ZboahkFDjpN0FVvNGWMXe1pSI/view?usp=sharing" target="_blank" rel="noopener">Résumé</a></li>
           </ul>
-          <p class="mono-label">© <span class="year">2026</span> Kajal Varma · Hand-built, no frameworks</p>
+          <p class="mono-label">© <span class="year">2026</span> Kajal Varma</p>
         </div>
       </div>
     </footer>
