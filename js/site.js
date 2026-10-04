@@ -2,7 +2,6 @@
   "use strict";
 
   var root = document.documentElement;
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ------------------------------------------------------------------
      Theme toggle
@@ -101,20 +100,31 @@
     setInterval(tick, 15000);
   }
 
+  /* ------------------------------------------------------------------
+     Certifications
+     ------------------------------------------------------------------ */
+  var thisMonth = new Date().toISOString().slice(0, 7);
+
+  document.querySelectorAll(".certs li").forEach(function (li) {
+    var status = li.querySelector(".cert-status");
+    var active = li.dataset.expires >= thisMonth;
+    li.classList.toggle("is-active", active);
+    var earned = "Earned " + li.dataset.earned.slice(0, 4);
+    status.textContent = active ? "Active · " + earned.toLowerCase() : earned;
+  });
+
   var year = document.querySelector(".year");
   if (year) year.textContent = new Date().getFullYear();
 
   /* ------------------------------------------------------------------
      Career uptime chart
      Dates are "YYYY-MM"; end: null means ongoing.
+     early: true draws work from before systems & reliability faded out.
      ------------------------------------------------------------------ */
   var CAREER = [
     { lane: "work", kind: "Work", items: [
-      { start: "2014-05", end: "2014-07", title: "Intern", org: "RailTel" },
-      { start: "2015-05", end: "2015-07", title: "SWE Intern, TurboTax Android", org: "Intuit India" },
-      { start: "2016-08", end: "2018-01", title: "Software Engineer 1", org: "Intuit India" },
-      { start: "2018-02", end: "2018-08", title: "Software Engineer 2", org: "Intuit India" },
-      { start: "2019-05", end: "2019-08", title: "SWE Intern, Core Tax Services", org: "Intuit" },
+      { start: "2016-08", end: "2018-08", title: "Software Engineer, TurboTax Desktop", org: "Intuit India", early: true },
+      { start: "2019-05", end: "2019-08", title: "SWE Intern, Core Tax Services", org: "Intuit", early: true },
       { start: "2020-01", end: "2021-07", title: "Software Engineer 2", org: "Intuit" },
       { start: "2021-08", end: "2024-01", title: "Senior Software Engineer", org: "Intuit" },
       { start: "2024-02", end: null, title: "Staff Software Engineer", org: "Intuit" },
@@ -123,7 +133,7 @@
       { start: "2012-08", end: "2016-07", title: "B.E. (Hons.) Computer Science", org: "BITS Pilani, Goa" },
       { start: "2018-08", end: "2019-12", title: "M.S. Computer Science", org: "Georgia Tech" },
     ] },
-    { lane: "teach", kind: "Teaching", items: [
+    { lane: "teach", kind: "Assistantships", items: [
       { start: "2015-01", end: "2015-05", title: "Professional Assistant, Computer Programming", org: "BITS Pilani, Goa" },
       { start: "2015-08", end: "2015-12", title: "TA, Computer Architecture", org: "BITS Pilani, Goa" },
       { start: "2019-01", end: "2019-05", title: "TA, CS 6262 Network Security", org: "Georgia Tech" },
@@ -176,7 +186,7 @@
         var s = toMonths(item.start);
         var e = item.end ? toMonths(item.end) + 1 : nowM + 1;
         var seg = document.createElement("span");
-        seg.className = "seg seg-" + group.lane + (item.end ? "" : " seg-now");
+        seg.className = "seg seg-" + group.lane + (item.end ? "" : " seg-now") + (item.early ? " seg-early" : "");
         seg.style.left = pct(s) + "%";
         seg.style.width = pct(e) - pct(s) + "%";
         seg.style.setProperty("--i", i++);
@@ -204,7 +214,8 @@
     frag.appendChild(ticks);
     chart.appendChild(frag);
 
-    var defaultText = "Hover or tap a segment for details";
+    var current = chart.querySelector(".seg-now");
+    var defaultText = current ? "Now: " + current.dataset.text : "";
     readout.textContent = defaultText;
 
     var activate = function (seg) {
@@ -226,53 +237,4 @@
       activate(e.target.classList.contains("seg") ? e.target : null);
     });
   }
-
-  /* ------------------------------------------------------------------
-     Project filters
-     ------------------------------------------------------------------ */
-  var filters = Array.prototype.slice.call(document.querySelectorAll(".filter"));
-  var projects = Array.prototype.slice.call(document.querySelectorAll(".project"));
-  var count = document.querySelector(".filter-count");
-  var COLLAPSED = 6;
-  var expanded = false;
-  var moreBtn = document.createElement("button");
-  moreBtn.type = "button";
-  moreBtn.className = "show-more";
-  moreBtn.textContent = "Show all " + projects.length + " projects";
-  moreBtn.addEventListener("click", function () {
-    expanded = true;
-    applyFilter("all");
-  });
-  if (projects.length) projects[0].parentNode.after(moreBtn);
-
-  function applyFilter(tag) {
-    var shown = 0;
-    var collapse = tag === "all" && !expanded;
-    moreBtn.hidden = !collapse;
-    projects.forEach(function (p, idx) {
-      var match = tag === "all" || p.dataset.tags.split(" ").indexOf(tag) !== -1;
-      if (collapse && idx >= COLLAPSED) match = false;
-      var wasHidden = p.hidden;
-      p.hidden = !match;
-      if (match) {
-        shown++;
-        if (wasHidden && !reduceMotion) {
-          p.classList.remove("is-entering");
-          void p.offsetWidth;
-          p.classList.add("is-entering");
-        }
-      }
-    });
-    filters.forEach(function (f) {
-      f.setAttribute("aria-pressed", String(f.dataset.filter === tag));
-    });
-    if (count) count.textContent = shown + " / " + projects.length;
-  }
-
-  filters.forEach(function (f) {
-    f.addEventListener("click", function () {
-      applyFilter(f.dataset.filter);
-    });
-  });
-  if (filters.length) applyFilter("all");
 })();
